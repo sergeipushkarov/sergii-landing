@@ -31,32 +31,7 @@ export default function LandingPage() {
       <header className="border-b border-gray-200">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            {/* Abstract Animation and Brand */}
-<div className="flex items-center gap-2">
-  <div className="relative w-12 h-8 mr-2">
-    <div className="absolute inset-0">
-      <div className="w-3 h-3 bg-black rounded-full absolute top-0 left-0 animate-pulse"></div>
-      <div className="w-2 h-2 bg-gray-400 rounded-full absolute top-1 right-2 animate-bounce delay-100"></div>
-      <div className="w-1.5 h-1.5 bg-gray-600 rounded-full absolute bottom-1 left-3 animate-pulse delay-200"></div>
-      <div className="w-2.5 h-2.5 bg-gray-300 rounded-full absolute bottom-0 right-0 animate-bounce delay-300"></div>
-      {/* Connecting lines */}
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 48 32">
-        <path
-          d="M6 6 L36 12 L18 26 L42 26"
-          stroke="currentColor"
-          strokeWidth="0.5"
-          fill="none"
-          className="text-gray-300 animate-pulse"
-          strokeDasharray="2,2"
-        />
-      </svg>
-    </div>
-  </div>
-  <div>
-    <div className="font-bold text-xl text-black">pshkrv</div>
-    <div className="text-sm text-gray-500">Strategic Design</div>
-  </div>
-</div>
+            <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
 
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -76,7 +51,7 @@ export default function LandingPage() {
               Contact
             </Link>
           </nav>
-          <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white" asChild>
+          <Button variant="outline" className="rounded-full border-2 border-black text-black hover:bg-black hover:text-white" asChild>
             <Link href="#contact">Start a Project</Link>
           </Button>
         </div>
@@ -92,7 +67,7 @@ export default function LandingPage() {
       <div className="max-w-4xl">
         <div className="flex items-center gap-2 text-sm text-gray-200 mb-8">
           <Compass className="w-4 h-4 text-gray-100" />
-          <span>Strategic Design Consultancy</span>
+          <span>Service & Strategic Design Consultancy</span>
         </div>
         <h1 className="text-5xl lg:text-6xl font-light mb-12 text-white leading-tight tracking-tight">
           Connecting the dots
@@ -111,10 +86,10 @@ export default function LandingPage() {
         </div>
         <Link
           href="#services"
-          className="inline-flex items-center text-white hover:text-gray-300 transition-colors group"
+          className="inline-flex items-center px-6 py-3 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group"
         >
-          <span className="text-lg">Discover how we can collaborate</span>
-          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform text-gray-100" />
+          <span className="text-lg text-white">Discover how we can collaborate</span>
+          <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform text-white" />
         </Link>
       </div>
 
@@ -271,23 +246,25 @@ export default function LandingPage() {
       {/* Services Section */}
       <section id="services" className="py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-20">
+          <div className="w-full">
+            <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Zap className="w-8 h-8 text-black" />
-                <h2 className="text-4xl font-light text-black">Strategic capabilities</h2>
+                <h2 className="text-xl font-semibold text-black">Services</h2>
               </div>
-              <p className="text-xl text-gray-600 max-w-3xl">
+              <p className="text-xl text-gray-600">
                 Multidisciplinary approach bridging strategic thinking with design execution—creating solutions that
                 address immediate needs and long-term goals.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-16">
+            <div className="grid lg:grid-cols-3 gap-12 w-full">
               <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <Users className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Service Design & Innovation</h3>
+                <div className="mb-6">
+                  <div className="mb-2">
+                    <Users className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Service Design & Innovation</h3>
                 </div>
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   Reimagining how organizations deliver value through orchestrated experiences spanning digital and
@@ -314,9 +291,11 @@ export default function LandingPage() {
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <Target className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Strategic Design Consulting</h3>
+                <div className="mb-6">
+                  <div className="mb-2">
+                    <Target className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Strategic Design Consulting</h3>
                 </div>
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   Applying design methodologies to complex business challenges, aligning organizational capabilities
@@ -343,9 +322,11 @@ export default function LandingPage() {
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <Palette className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Experience Design & Storytelling</h3>
+                <div className="mb-6">
+                  <div className="mb-2">
+                    <Palette className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Experience Design Building</h3>
                 </div>
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   Crafting cohesive brand experiences that resonate emotionally and functionally across all touchpoints.
@@ -377,25 +358,25 @@ export default function LandingPage() {
       {/* Work Section */}
       <section id="work" className="py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-20">
+          <div className="w-full">
+            <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Eye className="w-8 h-8 text-black" />
-                <h2 className="text-4xl font-light text-black">Selected work</h2>
+                <h2 className="text-xl font-semibold text-black">Selected work</h2>
               </div>
-              <p className="text-xl text-gray-600 max-w-3xl">
+              <p className="text-xl text-gray-600">
                 Projects demonstrating strategic design thinking and cross-disciplinary collaboration.
               </p>
             </div>
 
-            <div className="space-y-32">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-40 w-full">
+              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
                 <div>
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Globe className="w-4 h-4" />
                     <span>Retail Transformation</span>
                   </div>
-                  <h3 className="text-3xl font-light mb-6 text-black">Reimagining Technical Retail Experience</h3>
+                  <h3 className="text-3xl font-light text-black mb-6">Reimagining Technical Retail Experience</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Led comprehensive transformation for major technical retailer facing online competition. Deep
                     ethnographic research resulted in complete brand repositioning and experience redesign.
@@ -419,19 +400,19 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <img src="/project1.png" alt="Technical Retail Experience Project" className="h-[400px] w-full object-cover rounded-sm" />
+                <img src="/project1.png" alt="Technical Retail Experience Project" className="h-[400px] w-full object-cover rounded-2xl" />
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
                 <div className="order-2 lg:order-1">
-                  <img src="/project2.png" alt="Healthcare Innovation Project" className="h-[400px] w-full object-cover rounded-sm" />
+                  <img src="/project2.png" alt="Healthcare Innovation Project" className="h-[400px] w-full object-cover rounded-2xl" />
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Heart className="w-4 h-4" />
                     <span>Healthcare Innovation</span>
                   </div>
-                  <h3 className="text-3xl font-light mb-6 text-black">Transforming Patient Experience</h3>
+                  <h3 className="text-3xl font-light text-black mb-6">Transforming Patient Experience</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Aesthetic medical clinic sought differentiation while improving efficiency. In-depth shadowing
                     identified critical pain points and enhancement opportunities.
@@ -457,13 +438,13 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
                 <div>
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Layers className="w-4 h-4" />
                     <span>Hospitality Design</span>
                   </div>
-                  <h3 className="text-3xl font-light mb-6 text-black">Luxury Hospitality Customer Experience</h3>
+                  <h3 className="text-3xl font-light text-black mb-6">Luxury Hospitality Customer Experience</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Led service design for luxury hospitality development in East Asia. Challenge: create distinctive guest
                     experience in crowded luxury market.
@@ -487,17 +468,17 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <img src="/project3.png" alt="Luxury Hotel Experience Strategy Project" className="h-[400px] w-full object-cover rounded-sm" />
+                <img src="/project3.png" alt="Luxury Hotel Experience Strategy Project" className="h-[400px] w-full object-cover rounded-2xl" />
               </div>
             </div>
 
             <div className="mt-20 text-center">
               <Link
                 href="#contact"
-                className="inline-flex items-center text-black hover:text-gray-600 transition-colors group"
+                className="inline-flex items-center px-6 py-3 border-2 border-black/90 rounded-full bg-black/10 hover:bg-black/20 transition-all duration-300 group"
               >
-                <span className="text-lg">Discuss your project</span>
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                <span className="text-lg text-black">Discuss your project</span>
+                <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform text-black" />
               </Link>
             </div>
           </div>
@@ -507,18 +488,18 @@ export default function LandingPage() {
       {/* Approach Section */}
       <section id="approach" className="py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-20">
+          <div className="w-full">
+            <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Compass className="w-8 h-8 text-black" />
                 <h2 className="text-4xl font-light text-black">Methodology</h2>
               </div>
-              <p className="text-xl text-gray-600 max-w-3xl">
+              <p className="text-xl text-gray-600">
                 Rigorous yet flexible approach ensuring consistent, high-quality outcomes that create lasting value.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
               <div>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="text-4xl font-light text-gray-300">01</div>
@@ -594,18 +575,18 @@ export default function LandingPage() {
       {/* Philosophy Section */}
       <section id="philosophy" className="py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-20">
+          <div className="w-full">
+            <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="w-8 h-8 text-black" />
                 <h2 className="text-4xl font-light text-black">Design philosophy</h2>
               </div>
-              <p className="text-xl text-gray-600 max-w-3xl">
+              <p className="text-xl text-gray-600">
                 Core principles guiding how I approach design, collaboration, and creating meaningful impact.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-12 w-full">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <Layers className="w-6 h-6 text-black" />
@@ -657,18 +638,18 @@ export default function LandingPage() {
       {/* Contact Section */}
       <section id="contact" className="py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-16">
+          <div className="w-full">
+            <div className="mb-16 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Mail className="w-8 h-8 text-black" />
                 <h2 className="text-4xl font-light text-black">Let's collaborate</h2>
               </div>
-              <p className="text-xl text-gray-600 max-w-2xl">
+              <p className="text-xl text-gray-600">
                 Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-12 w-full max-w-5xl">
               <div>
                 <h3 className="text-xl font-light mb-8 text-black">Get in touch</h3>
                 <div className="space-y-6">
