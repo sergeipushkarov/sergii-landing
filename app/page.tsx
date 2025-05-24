@@ -419,12 +419,12 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <div className="h-[400px] bg-gray-100 rounded-sm"></div>
+                <img src="/project1.png" alt="Technical Retail Experience Project" className="h-[400px] w-full object-cover rounded-sm" />
               </div>
 
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="h-[400px] bg-gray-100 rounded-sm"></div>
+                  <img src="/project2.png" alt="Healthcare Innovation Project" className="h-[400px] w-full object-cover rounded-sm" />
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
@@ -463,9 +463,9 @@ export default function LandingPage() {
                     <Layers className="w-4 h-4" />
                     <span>Hospitality Design</span>
                   </div>
-                  <h3 className="text-3xl font-light mb-6 text-black">Luxury Hotel Experience Strategy</h3>
+                  <h3 className="text-3xl font-light mb-6 text-black">Luxury Hospitality Customer Experience</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Led service design for luxury hotel development in Middle East. Challenge: create distinctive guest
+                    Led service design for luxury hospitality development in East Asia. Challenge: create distinctive guest
                     experience in crowded luxury market.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
@@ -487,7 +487,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <div className="h-[400px] bg-gray-100 rounded-sm"></div>
+                <img src="/project3.png" alt="Luxury Hotel Experience Strategy Project" className="h-[400px] w-full object-cover rounded-sm" />
               </div>
             </div>
 
