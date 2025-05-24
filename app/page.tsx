@@ -77,8 +77,8 @@ export default function LandingPage() {
     }}
   />
   <div className="container mx-auto px-6 relative z-10">
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
-      <div className="max-w-4xl">
+    <div className="grid lg:grid-cols-3 gap-12 items-center">
+      <div className="lg:col-span-2 max-w-5xl">
         <div className="flex items-center gap-2 text-sm text-gray-200 mb-8">
           <Compass className="w-4 h-4 text-gray-100" />
           <span>Service & Strategic Design Consultancy</span>
@@ -103,8 +103,8 @@ export default function LandingPage() {
         </Link>
       </div>
 
-            {/* Right side illustration - empty for now */}
-            <div className="relative w-full h-[600px] hidden lg:block">
+            {/* Right side - thinner column */}
+            <div className="relative h-[600px] hidden lg:block">
               {/* Empty container for future content */}
             </div>
           </div>
