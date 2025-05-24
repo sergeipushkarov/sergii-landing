@@ -23,6 +23,7 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
+import Starfield from "@/components/Starfield"
 
 export default function LandingPage() {
   return (
@@ -59,9 +60,22 @@ export default function LandingPage() {
 
       {/* Hero Section */}
 <section
-  className="py-24 lg:py-32 relative overflow-hidden"
-  style={{ background: 'linear-gradient(120deg, #151a2b 60%, #232946 100%)' }}
+  className="py-24 lg:py-32 relative overflow-hidden min-h-screen flex items-center"
+  style={{
+    backgroundImage: 'linear-gradient(120deg, #151a2b 60%, #232946 100%)',
+    position: 'relative',
+    isolation: 'isolate',
+  }}
 >
+  <Starfield />
+  {/* Grid Background */}
+  <div 
+    className="absolute inset-0 opacity-10 pointer-events-none"
+    style={{
+      backgroundImage: 'linear-gradient(to right, #c7d2e5 1px, transparent 1px), linear-gradient(to bottom, #c7d2e5 1px, transparent 1px)',
+      backgroundSize: '60px 60px',
+    }}
+  />
   <div className="container mx-auto px-6 relative z-10">
     <div className="grid lg:grid-cols-2 gap-16 items-center">
       <div className="max-w-4xl">
@@ -70,11 +84,7 @@ export default function LandingPage() {
           <span>Service & Strategic Design Consultancy</span>
         </div>
         <h1 className="text-5xl lg:text-6xl font-light mb-12 text-white leading-tight tracking-tight">
-          Connecting the dots
-          <br />
-          between human needs
-          <br />
-          and business impact
+          Connecting the dots between human needs and business impact
         </h1>
         <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
           15+ years helping organizations transform complex challenges into meaningful experiences that drive
@@ -93,154 +103,12 @@ export default function LandingPage() {
         </Link>
       </div>
 
-            {/* Modern Futuristic Animation */}
+            {/* Right side illustration - empty for now */}
             <div className="relative w-full h-[600px] hidden lg:block">
-              <div className="absolute inset-0">
-                {/* Floating geometric shapes */}
-                <div className="absolute top-20 right-20 w-32 h-32 border border-blue-200/40 rotate-45 animate-spin-slow"></div>
-                <div className="absolute top-40 right-40 w-16 h-16 bg-white/10 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-40 right-10 w-24 h-24 border-2 border-cyan-100/40 rounded-full animate-bounce-slow"></div>
-
-                {/* Grid pattern */}
-                <svg className="absolute inset-0 w-full h-full opacity-25" viewBox="0 0 400 600">
-                  <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path
-                        d="M 40 0 L 0 0 0 40"
-                        fill="none"
-                        stroke="#c7d2e5"
-                        strokeWidth="1"
-                      />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid)" />
-                </svg>
-
-                {/* Floating nodes with connections */}
-                <div className="absolute top-32 right-32">
-                  <div className="relative">
-                    <div className="w-4 h-4 bg-black rounded-full animate-pulse"></div>
-                    <div className="absolute -top-1 -left-1 w-6 h-6 border border-gray-300 rounded-full animate-ping"></div>
-                  </div>
-                </div>
-
-                <div className="absolute top-60 right-16">
-                  <div className="relative">
-                    <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse delay-300"></div>
-                    <div className="absolute -top-1 -left-1 w-5 h-5 border border-gray-400 rounded-full animate-ping delay-300"></div>
-                  </div>
-                </div>
-
-                <div className="absolute bottom-32 right-28">
-                  <div className="relative">
-                    <div className="w-5 h-5 bg-gray-800 rounded-full animate-pulse delay-500"></div>
-                    <div className="absolute -top-1 -left-1 w-7 h-7 border border-gray-200 rounded-full animate-ping delay-500"></div>
-                  </div>
-                </div>
-
-                {/* Connecting lines */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 600">
-                  <defs>
-                    <linearGradient id="rainbow-gradient" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#7dd3fc" />      {/* Soft blue */}
-                      <stop offset="25%" stopColor="#a5b4fc" />     {/* Soft purple */}
-                      <stop offset="50%" stopColor="#6ee7b7" />     {/* Soft green */}
-                      <stop offset="75%" stopColor="#fcd34d" />     {/* Soft orange/yellow */}
-                      <stop offset="100%" stopColor="#fca5a5" />    {/* Soft red */}
-                    </linearGradient>
-                    <linearGradient id="blue-cyan-gradient" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#7dd3fc" />      {/* Soft blue */}
-                      <stop offset="100%" stopColor="#a7f3d0" />    {/* Soft aqua/cyan */}
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M128 128 Q200 200 64 240 T112 320"
-                    stroke="url(#rainbow-gradient)"
-                    strokeWidth="3"
-                    fill="none"
-                    opacity="0.9"
-                    strokeDasharray="7,7"
-                  >
-                    <animate attributeName="stroke-dashoffset" values="0;14" dur="2s" repeatCount="indefinite" />
-                  </path>
-                  <path
-                    d="M64 240 Q150 300 112 320"
-                    stroke="url(#blue-cyan-gradient)"
-                    strokeWidth="2.5"
-                    fill="none"
-                    opacity="0.7"
-                    strokeDasharray="5,5"
-                  >
-                    <animate attributeName="stroke-dashoffset" values="0;10" dur="3s" repeatCount="indefinite" />
-                  </path>
-                </svg>
-
-                {/* Floating particles */}
-                <div className="absolute top-16 right-12 w-1 h-1 bg-gray-400 rounded-full animate-float"></div>
-                <div className="absolute top-80 right-8 w-1.5 h-1.5 bg-gray-500 rounded-full animate-float delay-1000"></div>
-                <div className="absolute bottom-20 right-20 w-1 h-1 bg-gray-300 rounded-full animate-float delay-2000"></div>
-
-                {/* Hexagonal wireframe */}
-                <div className="absolute top-1/2 right-1/4 transform -translate-y-1/2">
-                  <svg width="80" height="80" viewBox="0 0 80 80" className="animate-spin-reverse">
-                    <polygon
-                      points="40,10 65,25 65,55 40,70 15,55 15,25"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1"
-                      className="text-gray-300 opacity-60"
-                    />
-                    <polygon
-                      points="40,20 55,30 55,50 40,60 25,50 25,30"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="0.5"
-                      className="text-gray-400 opacity-40"
-                    />
-                  </svg>
-                </div>
-
-                {/* Data streams */}
-                <div className="absolute top-1/3 right-0 w-px h-32 bg-gradient-to-b from-transparent via-gray-300 to-transparent animate-pulse"></div>
-                <div className="absolute top-2/3 right-8 w-px h-24 bg-gradient-to-b from-transparent via-gray-400 to-transparent animate-pulse delay-700"></div>
-              </div>
+              {/* Empty container for future content */}
             </div>
           </div>
         </div>
-
-        {/* Custom CSS for animations */}
-        <style jsx>{`
-          @keyframes spin-slow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-          }
-          @keyframes spin-reverse {
-            from { transform: rotate(360deg); }
-            to { transform: rotate(0deg); }
-          }
-          @keyframes bounce-slow {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-          }
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            25% { transform: translateY(-10px) translateX(5px); }
-            50% { transform: translateY(-5px) translateX(-5px); }
-            75% { transform: translateY(-15px) translateX(3px); }
-          }
-          .animate-spin-slow {
-            animation: spin-slow 20s linear infinite;
-          }
-          .animate-spin-reverse {
-            animation: spin-reverse 15s linear infinite;
-          }
-          .animate-bounce-slow {
-            animation: bounce-slow 3s ease-in-out infinite;
-          }
-          .animate-float {
-            animation: float 6s ease-in-out infinite;
-          }
-        `}</style>
       </section>
 
       {/* Services Section */}
@@ -472,13 +340,13 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="mt-20 text-center">
+            <div className="mt-20 text-left">
               <Link
                 href="#contact"
-                className="inline-flex items-center px-6 py-3 border-2 border-black/90 rounded-full bg-black/10 hover:bg-black/20 transition-all duration-300 group"
+                className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black/10 hover:bg-black/20 transition-all duration-300 group text-lg leading-tight"
               >
-                <span className="text-lg text-black">Discuss your project</span>
-                <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform text-black" />
+                <span className="text-xl text-black">Discuss your project</span>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-black" />
               </Link>
             </div>
           </div>
@@ -492,7 +360,7 @@ export default function LandingPage() {
             <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Compass className="w-8 h-8 text-black" />
-                <h2 className="text-4xl font-light text-black">Methodology</h2>
+                <h2 className="text-xl font-semibold text-black">Methodology</h2>
               </div>
               <p className="text-xl text-gray-600">
                 Rigorous yet flexible approach ensuring consistent, high-quality outcomes that create lasting value.
@@ -579,7 +447,7 @@ export default function LandingPage() {
             <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="w-8 h-8 text-black" />
-                <h2 className="text-4xl font-light text-black">Design philosophy</h2>
+                <h2 className="text-xl font-semibold text-black">Design philosophy</h2>
               </div>
               <p className="text-xl text-gray-600">
                 Core principles guiding how I approach design, collaboration, and creating meaningful impact.
@@ -588,9 +456,11 @@ export default function LandingPage() {
 
             <div className="grid md:grid-cols-2 gap-12 w-full">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Layers className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Systems thinking over isolated solutions</h3>
+                <div className="mb-4">
+                  <div className="mb-2">
+                    <Layers className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Systems thinking over isolated solutions</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Most impactful design addresses entire ecosystems. Understanding interconnections between people,
@@ -599,9 +469,11 @@ export default function LandingPage() {
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Target className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Human needs balanced with business realities</h3>
+                <div className="mb-4">
+                  <div className="mb-2">
+                    <Target className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Human needs balanced with business realities</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Successful design serves both human needs and business objectives—creating experiences that delight
@@ -610,9 +482,11 @@ export default function LandingPage() {
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Eye className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Clarity through complexity</h3>
+                <div className="mb-4">
+                  <div className="mb-2">
+                    <Eye className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Clarity through complexity</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Elegant solutions make complex feel simple. Bringing structure to ambiguous challenges helps
@@ -621,9 +495,11 @@ export default function LandingPage() {
               </div>
 
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Users className="w-6 h-6 text-black" />
-                  <h3 className="text-2xl font-light text-black">Collaborative creation</h3>
+                <div className="mb-4">
+                  <div className="mb-2">
+                    <Users className="w-10 h-10 text-black" />
+                  </div>
+                  <h3 className="text-3xl font-light text-black">Collaborative creation</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Best solutions emerge from diverse perspectives. Facilitating collaborative processes across
@@ -642,7 +518,7 @@ export default function LandingPage() {
             <div className="mb-16 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
                 <Mail className="w-8 h-8 text-black" />
-                <h2 className="text-4xl font-light text-black">Let's collaborate</h2>
+                <h2 className="text-xl font-semibold text-black">Let's collaborate</h2>
               </div>
               <p className="text-xl text-gray-600">
                 Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
@@ -718,7 +594,7 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-16 pt-16 border-t border-gray-200">
-              <Button className="bg-black text-white hover:bg-gray-800 px-8 py-3" asChild>
+              <Button className="bg-black text-white hover:bg-gray-800 px-12 py-5 rounded-full text-lg h-auto leading-tight" asChild>
                 <Link href="mailto:sergei.pushkaryov@gmail.com">
                   Start a conversation
                   <ArrowRight className="w-4 h-4 ml-2" />
