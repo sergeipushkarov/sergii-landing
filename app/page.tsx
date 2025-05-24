@@ -17,7 +17,7 @@ import {
   Search,
   PenTool,
   Rocket,
-  CheckCircle,
+  Check,
   Mail,
   Linkedin,
   Globe,
@@ -138,21 +138,21 @@ export default function LandingPage() {
                   Reimagining how organizations deliver value through orchestrated experiences spanning digital and
                   physical touchpoints.
                 </p>
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                <ul className="space-y-0 text-sm text-gray-600 divide-y divide-gray-400">
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     End-to-end customer journey mapping
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Service blueprinting & ecosystem design
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Touchpoint optimization & integration
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Digital service tools & platforms
                   </li>
                 </ul>
@@ -169,21 +169,21 @@ export default function LandingPage() {
                   Applying design methodologies to complex business challenges, aligning organizational capabilities
                   with evolving market needs.
                 </p>
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                <ul className="space-y-0 text-sm text-gray-600 divide-y divide-gray-400">
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Design-led innovation workshops
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Business model innovation
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Digital transformation strategy
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Cross-functional alignment
                   </li>
                 </ul>
@@ -199,21 +199,21 @@ export default function LandingPage() {
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   Crafting cohesive brand experiences that resonate emotionally and functionally across all touchpoints.
                 </p>
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                <ul className="space-y-0 text-sm text-gray-600 divide-y divide-gray-400">
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Brand experience strategy
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Spatial design & storytelling
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Digital experience design
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                  <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                    <Check className="w-4 h-4 text-gray-400" />
                     Visual communication
                   </li>
                 </ul>
@@ -256,14 +256,19 @@ export default function LandingPage() {
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center gap-2 text-gray-600">
                       <Target className="w-4 h-4" />
-                      <span>
-                        <strong>Scope:</strong> Brand strategy, service design, digital tools
+                      <span className="flex items-center gap-2">
+                        <strong>Scope:</strong>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Brand strategy</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">service design</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">digital tools</span>
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Zap className="w-4 h-4" />
-                      <span>
-                        <strong>Impact:</strong> 40% engagement increase, 25% conversion improvement
+                      <span className="flex items-center gap-2">
+                        <strong>Impact:</strong>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">40% engagement increase</span>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">25% conversion improvement</span>
                       </span>
                     </div>
                   </div>
@@ -292,14 +297,19 @@ export default function LandingPage() {
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center gap-2 text-gray-600">
                       <Target className="w-4 h-4" />
-                      <span>
-                        <strong>Scope:</strong> Service design, digital platform, training
+                      <span className="flex items-center gap-2">
+                        <strong>Scope:</strong>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Service design</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">digital platform</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">training</span>
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Zap className="w-4 h-4" />
-                      <span>
-                        <strong>Impact:</strong> 60% time reduction, 45% satisfaction improvement
+                      <span className="flex items-center gap-2">
+                        <strong>Impact:</strong>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">60% time reduction</span>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">45% satisfaction improvement</span>
                       </span>
                     </div>
                   </div>
@@ -324,14 +334,17 @@ export default function LandingPage() {
                   <div className="space-y-3 text-sm">
                     <div className="flex items-center gap-2 text-gray-600">
                       <Target className="w-4 h-4" />
-                      <span>
-                        <strong>Scope:</strong> Experience strategy, spatial planning
+                      <span className="flex items-center gap-2">
+                        <strong>Scope:</strong>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Experience strategy</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">spatial planning</span>
                       </span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-600">
                       <Zap className="w-4 h-4" />
-                      <span>
-                        <strong>Impact:</strong> Secured project against international competition
+                      <span className="flex items-center gap-2">
+                        <strong>Impact:</strong>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Secured project against international competition</span>
                       </span>
                     </div>
                   </div>
@@ -354,15 +367,15 @@ export default function LandingPage() {
       </section>
 
       {/* Approach Section */}
-      <section id="approach" className="py-24 border-t border-gray-200">
+      <section id="approach" className="py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
               <div className="flex items-center gap-3 mb-6">
-                <Compass className="w-8 h-8 text-black" />
-                <h2 className="text-xl font-semibold text-black">Methodology</h2>
+                <Compass className="w-8 h-8 text-white" />
+                <h2 className="text-xl font-semibold text-white">Methodology</h2>
               </div>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-200">
                 Rigorous yet flexible approach ensuring consistent, high-quality outcomes that create lasting value.
               </p>
             </div>
@@ -370,17 +383,17 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-300">01</div>
-                  <Search className="w-8 h-8 text-black" />
+                  <div className="text-4xl font-light text-gray-400">01</div>
+                  <Search className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-black">Discover</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-light mb-4 text-white">Discover</h3>
+                <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Immersive research using ethnographic methods, data analysis, and systems mapping to uncover insights
                   others miss.
                 </p>
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="text-xs text-gray-500 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-600">
+                <div className="pt-4 border-t border-gray-700">
+                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
+                  <div className="text-xs text-gray-200">
                     Stakeholder interviews, contextual inquiry, competitive analysis
                   </div>
                 </div>
@@ -388,17 +401,17 @@ export default function LandingPage() {
 
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-300">02</div>
-                  <Lightbulb className="w-8 h-8 text-black" />
+                  <div className="text-4xl font-light text-gray-400">02</div>
+                  <Lightbulb className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-black">Define</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-light mb-4 text-white">Define</h3>
+                <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Synthesizing research into actionable insights, identifying patterns and creating alignment around
                   clear problem statements.
                 </p>
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="text-xs text-gray-500 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-600">
+                <div className="pt-4 border-t border-gray-700">
+                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
+                  <div className="text-xs text-gray-200">
                     Insight development, opportunity mapping, strategic frameworks
                   </div>
                 </div>
@@ -406,33 +419,33 @@ export default function LandingPage() {
 
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-300">03</div>
-                  <PenTool className="w-8 h-8 text-black" />
+                  <div className="text-4xl font-light text-gray-400">03</div>
+                  <PenTool className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-black">Design</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-light mb-4 text-white">Design</h3>
+                <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Collaborative creation through iterative cycles, facilitating cross-disciplinary teams to generate and
                   refine concepts.
                 </p>
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="text-xs text-gray-500 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-600">Co-creation workshops, service blueprinting, prototyping</div>
+                <div className="pt-4 border-t border-gray-700">
+                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
+                  <div className="text-xs text-gray-200">Co-creation workshops, service blueprinting, prototyping</div>
                 </div>
               </div>
 
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-300">04</div>
-                  <Rocket className="w-8 h-8 text-black" />
+                  <div className="text-4xl font-light text-gray-400">04</div>
+                  <Rocket className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-black">Deliver</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-light mb-4 text-white">Deliver</h3>
+                <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Translating concepts into implementable solutions with clear roadmaps and ongoing measurement
                   frameworks.
                 </p>
-                <div className="pt-4 border-t border-gray-100">
-                  <div className="text-xs text-gray-500 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-600">Implementation planning, documentation, training</div>
+                <div className="pt-4 border-t border-gray-700">
+                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
+                  <div className="text-xs text-gray-200">Implementation planning, documentation, training</div>
                 </div>
               </div>
             </div>
@@ -529,7 +542,7 @@ export default function LandingPage() {
               <div>
                 <h3 className="text-xl font-light mb-8 text-black">Get in touch</h3>
                 <div className="space-y-6">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-start gap-3">
                     <Mail className="w-5 h-5 text-gray-400" />
                     <div>
                       <div className="text-sm text-gray-500 mb-1">Email</div>
@@ -541,7 +554,7 @@ export default function LandingPage() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-start gap-3">
                     <Linkedin className="w-5 h-5 text-gray-400" />
                     <div>
                       <div className="text-sm text-gray-500 mb-1">LinkedIn</div>
@@ -555,7 +568,7 @@ export default function LandingPage() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-gray-400" />
                     <div>
                       <div className="text-sm text-gray-500 mb-1">Location</div>
@@ -570,23 +583,23 @@ export default function LandingPage() {
                 <p className="text-gray-600 mb-6 leading-relaxed">Organizations that are:</p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                    <Check className="w-4 h-4 text-gray-400" />
                     Navigating business transformation
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                    <Check className="w-4 h-4 text-gray-400" />
                     Enhancing customer experience
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                    <Check className="w-4 h-4 text-gray-400" />
                     Integrating digital and physical experiences
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                    <Check className="w-4 h-4 text-gray-400" />
                     Building design capabilities
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-4 h-4 text-gray-400" />
+                    <Check className="w-4 h-4 text-gray-400" />
                     Committed to human-centered approaches
                   </li>
                 </ul>
@@ -611,12 +624,12 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div className="flex items-center gap-2">
               <div className="font-bold text-lg text-black">pshkrv</div>
-              <div className="text-sm text-gray-500">Strategic Design</div>
+              <div className="text-sm text-gray-500">Service & Strategic Design</div>
             </div>
             <div className="text-sm text-gray-500">
-              Connecting human needs with business impact through strategic design
+              Connecting human needs with business impact
             </div>
-            <div className="text-sm text-gray-500">&copy; 2024 All rights reserved</div>
+            <div className="text-sm text-gray-500">&copy; 2025 All rights reserved</div>
           </div>
         </div>
       </footer>

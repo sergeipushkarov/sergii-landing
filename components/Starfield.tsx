@@ -64,7 +64,7 @@ export default function Starfield() {
       <style jsx global>{`
         @keyframes twinkle {
           0% {
-            transform: translateY(0) scale(0.8);
+            transform: translateX(100vw) scale(0.8);
             opacity: 0.3;
           }
           10% {
@@ -80,15 +80,8 @@ export default function Starfield() {
             transform: scale(1);
           }
           100% {
-            transform: translateY(-100vh) scale(0.8);
+            transform: translateX(-100vw) scale(0.8);
             opacity: 0.3;
-          0%, 100% {
-            transform: scale(0.8);
-            opacity: 0.3;
-          }
-          50% {
-            opacity: 0.8;
-            transform: scale(1.1);
           }
         }
       `}</style>
