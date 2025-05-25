@@ -247,8 +247,7 @@ export default function LandingPage() {
                   </div>
                   <h3 className="text-3xl font-light text-black mb-6">Reimagining Technical Retail Experience</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Led comprehensive transformation for major technical retailer facing online competition. Deep
-                    ethnographic research resulted in complete brand repositioning and experience redesign.
+                    Comprehensive transformation for a major technical retailer futureproofing its benchmark position. Deep customer research resulted in a complete brand overhaul and experience redesign.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
                     Solution included new brand identity, redesigned environments, custom digital tools, and integrated
@@ -276,9 +275,13 @@ export default function LandingPage() {
                 </div>
                 <ProjectCarousel 
                   images={[
-                    { src: "/project1.png", alt: "Technical Retail Experience Project 1" },
-                    { src: "/project2.png", alt: "Technical Retail Experience Project 2" },
-                    { src: "/project3.png", alt: "Technical Retail Experience Project 3" },
+                    { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
+                    { src: "/slider1/2.png", alt: "Technical Retail Experience Project 2" },
+                    { src: "/slider1/3.png", alt: "Technical Retail Experience Project 3" },
+                    { src: "/slider1/4.png", alt: "Technical Retail Experience Project 4" },
+                    { src: "/slider1/5.png", alt: "Technical Retail Experience Project 5" },
+                    { src: "/slider1/6.png", alt: "Technical Retail Experience Project 6" },
+                    { src: "/slider1/7.png", alt: "Technical Retail Experience Project 7" },
                   ]} 
                   className="h-[400px] w-full"
                 />
@@ -288,9 +291,10 @@ export default function LandingPage() {
                 <div className="order-2 lg:order-1">
                   <ProjectCarousel 
                     images={[
-                      { src: "/project2.png", alt: "Healthcare Innovation Project 1" },
-                      { src: "/project1.png", alt: "Healthcare Innovation Project 2" },
-                      { src: "/project3.png", alt: "Healthcare Innovation Project 3" },
+                      { src: "/slider2/1.png", alt: "Healthcare Innovation Project 1" },
+                      { src: "/slider2/2.png", alt: "Healthcare Innovation Project 2" },
+                      { src: "/slider2/3.png", alt: "Healthcare Innovation Project 3" },
+                      { src: "/slider2/4.png", alt: "Healthcare Innovation Project 4" }
                     ]} 
                     className="h-[400px] w-full"
                   />
