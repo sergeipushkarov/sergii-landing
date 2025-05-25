@@ -24,6 +24,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Starfield from "@/components/Starfield"
+import { ProjectCarousel } from "@/components/ProjectCarousel"
 
 export default function LandingPage() {
   return (
@@ -273,12 +274,26 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <img src="/project1.png" alt="Technical Retail Experience Project" className="h-[400px] w-full object-cover rounded-2xl" />
+                <ProjectCarousel 
+                  images={[
+                    { src: "/project1.png", alt: "Technical Retail Experience Project 1" },
+                    { src: "/project2.png", alt: "Technical Retail Experience Project 2" },
+                    { src: "/project3.png", alt: "Technical Retail Experience Project 3" },
+                  ]} 
+                  className="h-[400px] w-full"
+                />
               </div>
 
               <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
                 <div className="order-2 lg:order-1">
-                  <img src="/project2.png" alt="Healthcare Innovation Project" className="h-[400px] w-full object-cover rounded-2xl" />
+                  <ProjectCarousel 
+                    images={[
+                      { src: "/project2.png", alt: "Healthcare Innovation Project 1" },
+                      { src: "/project1.png", alt: "Healthcare Innovation Project 2" },
+                      { src: "/project3.png", alt: "Healthcare Innovation Project 3" },
+                    ]} 
+                    className="h-[400px] w-full"
+                  />
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
@@ -349,7 +364,14 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <img src="/project3.png" alt="Luxury Hotel Experience Strategy Project" className="h-[400px] w-full object-cover rounded-2xl" />
+                <ProjectCarousel 
+                  images={[
+                    { src: "/project3.png", alt: "Luxury Hotel Experience Strategy Project 1" },
+                    { src: "/project1.png", alt: "Luxury Hotel Experience Strategy Project 2" },
+                    { src: "/project2.png", alt: "Luxury Hotel Experience Strategy Project 3" },
+                  ]} 
+                  className="h-[400px] w-full"
+                />
               </div>
             </div>
 
