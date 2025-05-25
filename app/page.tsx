@@ -370,9 +370,12 @@ export default function LandingPage() {
                 </div>
                 <ProjectCarousel 
                   images={[
-                    { src: "/project3.png", alt: "Luxury Hotel Experience Strategy Project 1" },
-                    { src: "/project1.png", alt: "Luxury Hotel Experience Strategy Project 2" },
-                    { src: "/project2.png", alt: "Luxury Hotel Experience Strategy Project 3" },
+                    { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
+                    { src: "/slider3/2.png", alt: "Luxury Hotel Experience Strategy Project 2" },
+                    { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" },
+                    { src: "/slider3/4.png", alt: "Luxury Hotel Experience Strategy Project 4" },
+                    { src: "/slider3/5.png", alt: "Luxury Hotel Experience Strategy Project 5" },
+                    { src: "/slider3/6.png", alt: "Luxury Hotel Experience Strategy Project 6" }
                   ]} 
                   className="h-[400px] w-full"
                 />
