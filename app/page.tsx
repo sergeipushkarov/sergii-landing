@@ -53,7 +53,7 @@ export default function LandingPage() {
               Contact
             </Link>
           </nav>
-          <Button variant="outline" className="rounded-full border-2 border-black text-black hover:bg-black hover:text-white" asChild>
+          <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black" asChild>
             <Link href="#contact">Start a Project</Link>
           </Button>
         </div>
@@ -97,10 +97,10 @@ export default function LandingPage() {
         </div>
         <Link
           href="#services"
-          className="inline-flex items-center px-6 py-3 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group"
+          className="inline-flex items-center px-10 py-5 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group text-lg leading-tight"
         >
-          <span className="text-lg text-white">Discover how we can collaborate</span>
-          <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform text-white" />
+          <span className="text-xl text-white">Discover how we can collaborate</span>
+          <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
         </Link>
       </div>
 
@@ -385,10 +385,10 @@ export default function LandingPage() {
             <div className="mt-20 text-left">
               <Link
                 href="#contact"
-                className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black/10 hover:bg-black/20 transition-all duration-300 group text-lg leading-tight"
+                className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
               >
-                <span className="text-xl text-black">Discuss your project</span>
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-black" />
+                <span className="text-xl text-white">Discuss your project</span>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
               </Link>
             </div>
           </div>
@@ -636,12 +636,13 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-16 pt-16 border-t border-gray-200">
-              <Button className="bg-black text-white hover:bg-gray-800 px-12 py-5 rounded-full text-lg h-auto leading-tight" asChild>
-                <Link href="mailto:sergei.pushkaryov@gmail.com">
-                  Start a conversation
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
+              <Link
+                href="mailto:sergei.pushkaryov@gmail.com"
+                className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
+              >
+                <span className="text-xl text-white">Start a conversation</span>
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
+              </Link>
             </div>
           </div>
         </div>
