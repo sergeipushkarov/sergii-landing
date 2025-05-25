@@ -123,7 +123,78 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-12 w-full">
+            {/* Mobile horizontal scroll container */}
+            <div className="lg:hidden relative w-full pb-12 px-6">
+              {/* Fade effect on the right side */}
+              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10">
+                <div className="absolute right-4 bottom-4 flex items-center gap-1 text-gray-400 text-xs">
+                  <span>Swipe</span>
+                  <ArrowRight className="w-3 h-3 animate-bounce-horizontal" />
+                </div>
+              </div>
+              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6">
+                <div className="flex gap-6 w-max pl-6">
+                  {[
+                    {
+                      icon: <Users className="w-10 h-10 text-black" />,
+                      title: 'Service Design & Innovation',
+                      description: 'Reimagining how organizations deliver value through orchestrated experiences spanning digital and physical touchpoints.',
+                      items: [
+                        'End-to-end customer journey mapping',
+                        'Service blueprinting & ecosystem design',
+                        'Touchpoint optimization & integration',
+                        'Digital service tools & platforms'
+                      ]
+                    },
+                    {
+                      icon: <Target className="w-10 h-10 text-black" />,
+                      title: 'Strategic Design Consulting',
+                      description: 'Applying design methodologies to complex business challenges, aligning organizational capabilities with evolving market needs.',
+                      items: [
+                        'Design-led innovation workshops',
+                        'Business model innovation',
+                        'Digital transformation strategy',
+                        'Cross-functional alignment'
+                      ]
+                    },
+                    {
+                      icon: <Palette className="w-10 h-10 text-black" />,
+                      title: 'Experience Design Building',
+                      description: 'Crafting cohesive brand experiences that resonate emotionally and functionally across all touchpoints.',
+                      items: [
+                        'Digital product design',
+                        'Physical/digital experience integration',
+                        'Design systems & language',
+                        'Prototyping & testing'
+                      ]
+                    }
+                  ].map((service, index) => (
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                      <div className="mb-6">
+                        <div className="mb-2">
+                          {service.icon}
+                        </div>
+                        <h3 className="text-2xl font-light text-black">{service.title}</h3>
+                      </div>
+                      <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                        {service.description}
+                      </p>
+                      <ul className="space-y-0 text-sm text-gray-600 divide-y divide-gray-200">
+                        {service.items.map((item, i) => (
+                          <li key={i} className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
+                            <Check className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop grid layout */}
+            <div className="hidden lg:grid lg:grid-cols-3 gap-12 w-full">
               <div>
                 <div className="mb-6">
                   <div className="mb-2">
@@ -199,19 +270,19 @@ export default function LandingPage() {
                 <ul className="space-y-0 text-sm text-gray-600 divide-y divide-gray-400">
                   <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
                     <Check className="w-4 h-4 text-gray-400" />
-                    Brand experience strategy
+                    Digital product design
                   </li>
                   <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
                     <Check className="w-4 h-4 text-gray-400" />
-                    Spatial design & storytelling
+                    Physical/digital experience integration
                   </li>
                   <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
                     <Check className="w-4 h-4 text-gray-400" />
-                    Digital experience design
+                    Design systems & language
                   </li>
                   <li className="flex items-center gap-2 py-3 first:pt-0 last:pb-0">
                     <Check className="w-4 h-4 text-gray-400" />
-                    Visual communication
+                    Prototyping & testing
                   </li>
                 </ul>
               </div>
