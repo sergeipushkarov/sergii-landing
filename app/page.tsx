@@ -790,7 +790,7 @@ export default function LandingPage() {
 
             <div className="mt-16 pt-16 border-t border-gray-200">
               <Link
-                href="mailto:sergei.pushkaryov@gmail.com"
+                href="mailto:sergei@pshkrv.com"
                 className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
               >
                 <span className="text-xl text-white">Start a conversation</span>
