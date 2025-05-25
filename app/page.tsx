@@ -406,70 +406,78 @@ export default function LandingPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-400">01</div>
-                  <Search className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <div className="text-sm font-thin text-gray-400">01</div>
+                  <Search className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-white">Discover</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">Discover</h3>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Immersive research using ethnographic methods, data analysis, and systems mapping to uncover insights
                   others miss.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-200">
-                    Stakeholder interviews, contextual inquiry, competitive analysis
+                  <div className="flex flex-col items-start gap-4 mt-2">
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Stakeholder interviews</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Contextual inquiry</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Competitive analysis</span>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-400">02</div>
-                  <Lightbulb className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <div className="text-sm font-thin text-gray-400">02</div>
+                  <Lightbulb className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-white">Define</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">Define</h3>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Synthesizing research into actionable insights, identifying patterns and creating alignment around
                   clear problem statements.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-200">
-                    Insight development, opportunity mapping, strategic frameworks
+                  <div className="flex flex-col items-start gap-4 mt-2">
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Insight development</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Opportunity mapping</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Strategic frameworks</span>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-400">03</div>
-                  <PenTool className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <div className="text-sm font-thin text-gray-400">03</div>
+                  <PenTool className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-white">Design</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">Design</h3>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Collaborative creation through iterative cycles, facilitating cross-disciplinary teams to generate and
                   refine concepts.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-200">Co-creation workshops, service blueprinting, prototyping</div>
+                  <div className="flex flex-col items-start gap-4 mt-2">
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Co-creation workshops</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Service blueprinting</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Prototyping</span>
+                  </div>
                 </div>
               </div>
 
               <div>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="text-4xl font-light text-gray-400">04</div>
-                  <Rocket className="w-8 h-8 text-white" />
+                <div className="flex flex-col items-start gap-2 mb-4">
+                  <div className="text-sm font-thin text-gray-400">04</div>
+                  <Rocket className="w-12 h-12 text-white" />
                 </div>
-                <h3 className="text-xl font-light mb-4 text-white">Deliver</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-white">Deliver</h3>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
                   Translating concepts into implementable solutions with clear roadmaps and ongoing measurement
                   frameworks.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="text-xs text-gray-300 mb-2">Key activities:</div>
-                  <div className="text-xs text-gray-200">Implementation planning, documentation, training</div>
+                  <div className="flex flex-col items-start gap-4 mt-2">
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Implementation planning</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Success metrics</span>
+                    <span className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Continuous improvement</span>
+                  </div>
                 </div>
               </div>
             </div>
