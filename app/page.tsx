@@ -95,7 +95,7 @@ export default function LandingPage() {
           href="#services"
           className="inline-flex items-center px-10 py-5 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group text-lg leading-tight"
         >
-          <span className="text-xl text-white">Discover how we can collaborate</span>
+          <span className="text-xl text-white">How we can collaborate</span>
           <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
         </Link>
       </div>
@@ -321,22 +321,26 @@ export default function LandingPage() {
                     online-offline journey.
                   </p>
                   <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Target className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Scope:</strong>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Brand strategy</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">service design</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">digital tools</span>
-                      </span>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Target className="w-4 h-4 flex-shrink-0" />
+                        <strong className="whitespace-nowrap">Scope:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Brand strategy</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">service design</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">digital tools</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Zap className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Impact:</strong>
-                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">40% engagement increase</span>
-                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">25% conversion improvement</span>
-                      </span>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 flex-shrink-0" />
+                        <strong className="whitespace-nowrap">Impact:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">40% engagement increase</span>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">25% conversion improvement</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -381,22 +385,26 @@ export default function LandingPage() {
                     platform integration.
                   </p>
                   <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Target className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Scope:</strong>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Service design</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">digital platform</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">training</span>
-                      </span>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Target className="w-4 h-4 flex-shrink-0" />
+                        <strong className="whitespace-nowrap">Scope:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Service design</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">digital platform</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">training</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Zap className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Impact:</strong>
-                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">60% time reduction</span>
-                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">45% satisfaction improvement</span>
-                      </span>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 flex-shrink-0" />
+                        <strong className="whitespace-nowrap">Impact:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">60% time reduction</span>
+                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">45% satisfaction improvement</span>
+                      </div>
                     </div>
                   </div>
                 </div>
