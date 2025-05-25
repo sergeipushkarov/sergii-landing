@@ -345,21 +345,25 @@ export default function LandingPage() {
                     Integrated service design into architectural planning, creating cohesive experience strategy
                     informing all guest touchpoints.
                   </p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Target className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Scope:</strong>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">Experience strategy</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full">spatial planning</span>
-                      </span>
+                  <div className="space-y-4 text-sm">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Target className="w-3.5 h-3.5 flex-shrink-0" />
+                        <strong className="whitespace-nowrap text-xs sm:text-sm">Scope:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        <span className="bg-gray-800 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full whitespace-nowrap">Experience strategy</span>
+                        <span className="bg-gray-800 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full whitespace-nowrap">spatial planning</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Zap className="w-4 h-4" />
-                      <span className="flex items-center gap-2">
-                        <strong>Impact:</strong>
-                        <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">Secured project against international competition</span>
-                      </span>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-3.5 h-3.5 flex-shrink-0" />
+                        <strong className="whitespace-nowrap text-xs sm:text-sm">Impact:</strong>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        <span className="bg-gray-100 text-gray-800 text-[10px] sm:text-xs px-2 py-1 rounded-full border border-gray-200 whitespace-nowrap">Secured project against intl. competition</span>
+                      </div>
                     </div>
                   </div>
                 </div>
