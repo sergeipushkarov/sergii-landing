@@ -32,30 +32,25 @@ export default function LandingPage() {
       {/* Header */}
       <header className="border-b border-gray-200">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center">
             <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
-
           </div>
-          <nav className="hidden md:flex space-x-8">
-            <Link href="#services" className="text-sm text-gray-700 hover:text-black transition-colors">
-              Services
-            </Link>
-            <Link href="#work" className="text-sm text-gray-700 hover:text-black transition-colors">
-              Work
-            </Link>
-            <Link href="#approach" className="text-sm text-gray-700 hover:text-black transition-colors">
-              Approach
-            </Link>
-            <Link href="#philosophy" className="text-sm text-gray-700 hover:text-black transition-colors">
-              Philosophy
-            </Link>
-            <Link href="#contact" className="text-sm text-gray-700 hover:text-black transition-colors">
-              Contact
-            </Link>
-          </nav>
-          <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black" asChild>
-            <Link href="#contact">Start a Project</Link>
-          </Button>
+          <div className="flex items-center space-x-8">
+            <nav className="hidden md:flex space-x-8">
+              <Link href="#services" className="text-sm text-gray-700 hover:text-black transition-colors">
+                Services
+              </Link>
+              <Link href="#work" className="text-sm text-gray-700 hover:text-black transition-colors">
+                Work
+              </Link>
+              <Link href="#approach" className="text-sm text-gray-700 hover:text-black transition-colors">
+                Approach
+              </Link>
+            </nav>
+            <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black whitespace-nowrap" asChild>
+              <Link href="#contact">Start a Project</Link>
+            </Button>
+          </div>
         </div>
       </header>
 
