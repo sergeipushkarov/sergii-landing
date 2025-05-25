@@ -12,6 +12,7 @@ import {
   Zap,
   Eye,
   Heart,
+  HeartPulse,
   Compass,
   Layers,
   Search,
@@ -306,13 +307,28 @@ export default function LandingPage() {
             </div>
 
             <div className="space-y-40 w-full">
-              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
-                <div>
+              {/* Project 1 */}
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+                {/* Text content - comes first on mobile, stays on left on desktop */}
+                <div className="order-2 lg:order-1">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Globe className="w-4 h-4" />
                     <span>Retail Transformation</span>
                   </div>
                   <h3 className="text-3xl font-light text-black mb-6">Reimagining Technical Retail Experience</h3>
+                  
+                  {/* Mobile image - only shows on mobile */}
+                  <div className="lg:hidden mb-8 -mx-6">
+                    <ProjectCarousel 
+                      images={[
+                        { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
+                        { src: "/slider1/2.png", alt: "Technical Retail Experience Project 2" },
+                        { src: "/slider1/3.png", alt: "Technical Retail Experience Project 3" },
+                      ]}
+                      className="rounded-none"
+                    />
+                  </div>
+                  
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Comprehensive transformation for a major technical retailer futureproofing its benchmark position. Deep customer research resulted in a complete brand overhaul and experience redesign.
                   </p>
@@ -344,22 +360,28 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <ProjectCarousel 
-                  images={[
-                    { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
-                    { src: "/slider1/2.png", alt: "Technical Retail Experience Project 2" },
-                    { src: "/slider1/3.png", alt: "Technical Retail Experience Project 3" },
-                    { src: "/slider1/4.png", alt: "Technical Retail Experience Project 4" },
-                    { src: "/slider1/5.png", alt: "Technical Retail Experience Project 5" },
-                    { src: "/slider1/6.png", alt: "Technical Retail Experience Project 6" },
-                    { src: "/slider1/7.png", alt: "Technical Retail Experience Project 7" },
-                  ]} 
-                  className="h-[400px] w-full"
-                />
+                
+                {/* Desktop image - only shows on desktop */}
+                <div className="hidden lg:block order-1 lg:order-2">
+                  <ProjectCarousel 
+                    images={[
+                      { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
+                      { src: "/slider1/2.png", alt: "Technical Retail Experience Project 2" },
+                      { src: "/slider1/3.png", alt: "Technical Retail Experience Project 3" },
+                      { src: "/slider1/4.png", alt: "Technical Retail Experience Project 4" },
+                      { src: "/slider1/5.png", alt: "Technical Retail Experience Project 5" },
+                      { src: "/slider1/6.png", alt: "Technical Retail Experience Project 6" },
+                      { src: "/slider1/7.png", alt: "Technical Retail Experience Project 7" },
+                    ]} 
+                    className="h-[400px] w-full"
+                  />
+                </div>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
-                <div className="order-2 lg:order-1">
+              {/* Project 2 */}
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+                {/* Desktop image - only shows on desktop */}
+                <div className="hidden lg:block">
                   <ProjectCarousel 
                     images={[
                       { src: "/slider2/1.png", alt: "Healthcare Innovation Project 1" },
@@ -370,12 +392,27 @@ export default function LandingPage() {
                     className="h-[400px] w-full"
                   />
                 </div>
-                <div className="order-1 lg:order-2">
+                
+                {/* Text content - comes first on mobile, stays on right on desktop */}
+                <div className="order-2 lg:order-2">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-                    <Heart className="w-4 h-4" />
+                    <HeartPulse className="w-4 h-4" />
                     <span>Healthcare Innovation</span>
                   </div>
                   <h3 className="text-3xl font-light text-black mb-6">Transforming Patient Experience</h3>
+                  
+                  {/* Mobile image - only shows on mobile */}
+                  <div className="lg:hidden mb-8 -mx-6">
+                    <ProjectCarousel 
+                      images={[
+                        { src: "/slider2/1.png", alt: "Healthcare Project 1" },
+                        { src: "/slider2/2.png", alt: "Healthcare Project 2" },
+                        { src: "/slider2/3.png", alt: "Healthcare Project 3" }
+                      ]}
+                      className="rounded-none"
+                    />
+                  </div>
+                  
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Aesthetic medical clinic sought differentiation while improving efficiency. In-depth shadowing
                     identified critical pain points and enhancement opportunities.
@@ -410,13 +447,28 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-24 items-start w-full">
-                <div>
+              {/* Project 3 */}
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+                {/* Text content - comes first on mobile, stays on left on desktop */}
+                <div className="order-2 lg:order-1">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Layers className="w-4 h-4" />
                     <span>Hospitality Design</span>
                   </div>
                   <h3 className="text-3xl font-light text-black mb-6">Luxury Hospitality Customer Experience</h3>
+                  
+                  {/* Mobile image - only shows on mobile */}
+                  <div className="lg:hidden mb-8 -mx-6">
+                    <ProjectCarousel 
+                      images={[
+                        { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
+                        { src: "/slider3/2.png", alt: "Luxury Hotel Experience Strategy Project 2" },
+                        { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" }
+                      ]}
+                      className="rounded-none"
+                    />
+                  </div>
+                  
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Led service design for luxury hospitality development in East Asia. Challenge: create distinctive guest
                     experience in crowded luxury market.
@@ -447,17 +499,21 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <ProjectCarousel 
-                  images={[
-                    { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
-                    { src: "/slider3/2.png", alt: "Luxury Hotel Experience Strategy Project 2" },
-                    { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" },
-                    { src: "/slider3/4.png", alt: "Luxury Hotel Experience Strategy Project 4" },
-                    { src: "/slider3/5.png", alt: "Luxury Hotel Experience Strategy Project 5" },
-                    { src: "/slider3/6.png", alt: "Luxury Hotel Experience Strategy Project 6" }
-                  ]} 
-                  className="h-[400px] w-full"
-                />
+                
+                {/* Desktop image - only shows on desktop */}
+                <div className="hidden lg:block order-1 lg:order-2">
+                  <ProjectCarousel 
+                    images={[
+                      { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
+                      { src: "/slider3/2.png", alt: "Luxury Hotel Experience Strategy Project 2" },
+                      { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" },
+                      { src: "/slider3/4.png", alt: "Luxury Hotel Experience Strategy Project 4" },
+                      { src: "/slider3/5.png", alt: "Luxury Hotel Experience Strategy Project 5" },
+                      { src: "/slider3/6.png", alt: "Luxury Hotel Experience Strategy Project 6" }
+                    ]} 
+                    className="h-[400px] w-full"
+                  />
+                </div>
               </div>
             </div>
 
