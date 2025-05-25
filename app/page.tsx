@@ -21,6 +21,7 @@ import {
   Mail,
   Linkedin,
   Globe,
+  ArrowUp,
 } from "lucide-react"
 import Link from "next/link"
 import Starfield from "@/components/Starfield"
@@ -408,7 +409,73 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+            {/* Mobile horizontal scroll container */}
+            <div className="md:hidden relative w-full pb-8 px-6">
+              {/* Fade effect on the right side */}
+              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-900 to-transparent pointer-events-none z-10">
+                <div className="absolute right-4 bottom-4 flex items-center gap-1 text-white/70 text-xs">
+                  <span>Swipe</span>
+                  <ArrowRight className="w-3 h-3 animate-bounce-horizontal" />
+                </div>
+              </div>
+              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6">
+                <div className="flex gap-6 w-max pl-6">
+                  {[
+                    {
+                      number: '01',
+                      icon: <Search className="w-12 h-12 text-white" />,
+                      title: 'Discover',
+                      description: 'Immersive research using ethnographic methods, data analysis, and systems mapping to uncover insights others miss.',
+                      tags: ['Stakeholder interviews', 'Contextual inquiry', 'Competitive analysis']
+                    },
+                    {
+                      number: '02',
+                      icon: <Lightbulb className="w-12 h-12 text-white" />,
+                      title: 'Define',
+                      description: 'Synthesizing research into actionable insights, identifying patterns and creating alignment around clear problem statements.',
+                      tags: ['Insight development', 'Opportunity mapping', 'Strategic frameworks']
+                    },
+                    {
+                      number: '03',
+                      icon: <PenTool className="w-12 h-12 text-white" />,
+                      title: 'Design',
+                      description: 'Collaborative creation through iterative cycles, facilitating cross-disciplinary teams to generate and refine concepts.',
+                      tags: ['Co-creation workshops', 'Service blueprinting', 'Prototyping']
+                    },
+                    {
+                      number: '04',
+                      icon: <Rocket className="w-12 h-12 text-white" />,
+                      title: 'Deliver',
+                      description: 'Translating concepts into implementable solutions with clear roadmaps and ongoing measurement frameworks.',
+                      tags: ['Implementation planning', 'Success metrics', 'Continuous improvement']
+                    }
+                  ].map((item, index) => (
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start">
+                      <div className="flex flex-col items-start gap-2 mb-4">
+                        <div className="text-sm font-thin text-gray-400">{item.number}</div>
+                        {item.icon}
+                      </div>
+                      <h3 className="text-2xl font-semibold mb-4 text-white">{item.title}</h3>
+                      <p className="text-gray-200 text-sm leading-relaxed mb-6">
+                        {item.description}
+                      </p>
+                      <div className="pt-4 border-t border-gray-700">
+                        <div className="flex flex-col items-start gap-2 mt-2">
+                          {item.tags.map((tag, i) => (
+                            <span key={i} className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop grid layout */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
               <div>
                 <div className="flex flex-col items-start gap-2 mb-4">
                   <div className="text-sm font-thin text-gray-400">01</div>
