@@ -58,7 +58,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
 <section
-  className="py-24 lg:py-32 relative overflow-hidden min-h-screen flex items-center"
+  className="py-16 sm:py-24 lg:py-32 relative overflow-hidden min-h-screen flex items-center"
   style={{
     backgroundImage: 'linear-gradient(120deg, #151a2b 60%, #232946 100%)',
     position: 'relative',
@@ -110,7 +110,7 @@ export default function LandingPage() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 border-t border-gray-200">
+      <section id="services" className="py-16 sm:py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
@@ -125,7 +125,7 @@ export default function LandingPage() {
             </div>
 
             {/* Mobile horizontal scroll container */}
-            <div className="lg:hidden relative w-full pb-12 px-6">
+            <div className="lg:hidden relative w-full pb-8 px-4">
               {/* Fade effect on the right side */}
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10">
                 <div className="absolute right-4 bottom-4 flex items-center gap-1 text-gray-400 text-xs">
@@ -170,7 +170,7 @@ export default function LandingPage() {
                       ]
                     }
                   ].map((service, index) => (
-                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-white p-5 sm:p-6 rounded-lg shadow-sm border border-gray-100">
                       <div className="mb-6">
                         <div className="mb-2">
                           {service.icon}
@@ -293,7 +293,7 @@ export default function LandingPage() {
       </section>
 
       {/* Work Section */}
-      <section id="work" className="py-24 border-t border-gray-200">
+      <section id="work" className="py-16 sm:py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
@@ -306,7 +306,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="space-y-40 w-full">
+            <div className="space-y-24 sm:space-y-40 w-full">
               {/* Project 1 */}
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
                 {/* Text content - comes first on mobile, stays on left on desktop */}
@@ -531,7 +531,7 @@ export default function LandingPage() {
       </section>
 
       {/* Approach Section */}
-      <section id="approach" className="py-24 bg-gray-900 text-white">
+      <section id="approach" className="py-16 sm:py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
@@ -545,7 +545,7 @@ export default function LandingPage() {
             </div>
 
             {/* Mobile horizontal scroll container */}
-            <div className="md:hidden relative w-full pb-8 px-6">
+            <div className="md:hidden relative w-full pb-8 px-4">
               {/* Fade effect on the right side */}
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-900 to-transparent pointer-events-none z-10">
                 <div className="absolute right-4 bottom-4 flex items-center gap-1 text-white/70 text-xs">
@@ -585,7 +585,7 @@ export default function LandingPage() {
                       tags: ['Implementation planning', 'Success metrics', 'Continuous improvement']
                     }
                   ].map((item, index) => (
-                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start">
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start p-4">
                       <div className="flex flex-col items-start gap-2 mb-4">
                         <div className="text-sm font-thin text-gray-400">{item.number}</div>
                         {item.icon}
@@ -692,7 +692,7 @@ export default function LandingPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section id="philosophy" className="py-24 border-t border-gray-200">
+      <section id="philosophy" className="py-16 sm:py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
@@ -705,7 +705,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 w-full">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-12 w-full">
               <div>
                 <div className="mb-4">
                   <div className="mb-2">
@@ -763,7 +763,7 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 border-t border-gray-200">
+      <section id="contact" className="py-16 sm:py-24 border-t border-gray-200">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-16 max-w-3xl">
@@ -776,7 +776,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 w-full max-w-5xl">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
               <div>
                 <h3 className="text-xl font-light mb-8 text-black">Get in touch</h3>
                 <div className="space-y-6">
@@ -858,9 +858,9 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-gray-200">
+      <footer className="py-8 sm:py-12 border-t border-gray-200">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
             <div className="flex items-center gap-2">
               <div className="font-bold text-lg text-black">pshkrv</div>
               <div className="text-sm text-gray-500">Service & Strategic Design</div>
