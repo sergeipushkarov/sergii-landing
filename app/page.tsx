@@ -158,7 +158,7 @@ export default function LandingPage() {
               </motion.p>
               
               <motion.div 
-                className="flex items-center gap-2 text-gray-300 mb-12"
+                className="flex items-center gap-2 text-gray-500 mb-12"
                 variants={{
                   hidden: { opacity: 0, y: 10 },
                   visible: { 
@@ -168,7 +168,7 @@ export default function LandingPage() {
                   }
                 }}
               >
-                <MapPin className="w-4 h-4 text-gray-200" />
+                <MapPin className="w-4 h-4 text-gray-500" />
                 <span className="text-sm">Based in Milan, working globally</span>
               </motion.div>
               
@@ -205,7 +205,7 @@ export default function LandingPage() {
                   <Zap className="w-8 h-8 text-black" />
                   <h2 className="text-xl font-semibold text-black">Services</h2>
                 </div>
-                <p className="text-xl text-gray-600">
+                <p className="text-xl text-gray-500">
                   Multidisciplinary approach bridging strategic thinking with design execution—creating solutions that
                   address immediate needs and long-term goals.
                 </p>
@@ -392,7 +392,7 @@ export default function LandingPage() {
                 <Eye className="w-8 h-8 text-black" />
                 <h2 className="text-xl font-semibold text-black">Selected work</h2>
               </div>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-500">
                 Projects demonstrating strategic design thinking and cross-disciplinary collaboration.
               </p>
             </div>
@@ -625,7 +625,7 @@ export default function LandingPage() {
                 <Compass className="w-8 h-8 text-white" />
                 <h2 className="text-xl font-semibold text-white">Methodology</h2>
               </div>
-              <p className="text-xl text-gray-200">
+              <p className="text-xl text-gray-400">
                 Rigorous yet flexible approach ensuring consistent, high-quality outcomes that create lasting value.
               </p>
             </div>
@@ -709,9 +709,9 @@ export default function LandingPage() {
                 </p>
                 <div className="pt-4 border-t border-gray-700">
                   <div className="flex flex-col gap-3 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Stakeholder interviews</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Contextual inquiry</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Competitive analysis</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Stakeholder interviews</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Contextual inquiry</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Competitive analysis</span>
                   </div>
                 </div>
               </div>
@@ -723,14 +723,13 @@ export default function LandingPage() {
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-white">Define</h3>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
-                  Synthesizing research into actionable insights, identifying patterns and creating alignment around
-                  clear problem statements.
+                  Synthesizing research into actionable insights, identifying patterns and aligning around clear problem statements.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
                   <div className="flex flex-col gap-3 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Insight development</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Opportunity mapping</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Strategic frameworks</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Insight development</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Opportunity mapping</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Strategic frameworks</span>
                   </div>
                 </div>
               </div>
@@ -747,9 +746,9 @@ export default function LandingPage() {
                 </p>
                 <div className="pt-4 border-t border-gray-700">
                   <div className="flex flex-col gap-3 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Co-creation workshops</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Service blueprinting</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Prototyping</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Co-creation workshops</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Service blueprinting</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Prototyping</span>
                   </div>
                 </div>
               </div>
@@ -766,9 +765,9 @@ export default function LandingPage() {
                 </p>
                 <div className="pt-4 border-t border-gray-700">
                   <div className="flex flex-col gap-3 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Implementation planning</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Success metrics</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Continuous improvement</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Implementation planning</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Success metrics</span>
+                    <span className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">Continuous improvement</span>
                   </div>
                 </div>
               </div>
@@ -786,7 +785,7 @@ export default function LandingPage() {
                 <Heart className="w-8 h-8 text-black" />
                 <h2 className="text-xl font-semibold text-black">Design philosophy</h2>
               </div>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-500">
                 Core principles guiding how I approach design, collaboration, and creating meaningful impact.
               </p>
             </div>
@@ -857,7 +856,7 @@ export default function LandingPage() {
                   <Mail className="w-8 h-8 text-black" />
                   <h2 className="text-xl font-semibold text-black">Let's collaborate</h2>
                 </div>
-                <p className="text-xl text-gray-600">
+                <p className="text-xl text-gray-500">
                   Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
                 </p>
               </div>
