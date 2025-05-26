@@ -964,17 +964,24 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 sm:py-12 bg-gray-900 text-white">
+      <footer className="pt-12 pb-8 sm:pt-16 sm:pb-10 bg-gray-900 text-white">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
-            <div className="flex items-center gap-2">
-              <div className="font-bold text-lg text-white">pshkrv</div>
-              <div className="text-sm text-gray-300">Service & Strategic Design</div>
+          <div className="flex flex-col">
+            <div className="flex flex-wrap items-start justify-between gap-4 w-full">
+              <div className="flex">
+                <div className="font-bold text-lg text-white leading-none">pshkrv</div>
+                <div className="ml-2">
+                  <div className="text-sm text-gray-300">Service & Strategic Design</div>
+                  <div className="text-gray-500 font-light text-sm mt-1">P.IVA 10092930964</div>
+                </div>
+              </div>
+              <div className="text-sm text-gray-300">
+                Connecting human needs with business impact
+              </div>
+              <div className="text-sm text-gray-300">
+                &copy; 2025 All rights reserved
+              </div>
             </div>
-            <div className="text-sm text-gray-300">
-              Connecting human needs with business impact
-            </div>
-            <div className="text-sm text-gray-300">&copy; 2025 All rights reserved</div>
           </div>
         </div>
       </footer>
