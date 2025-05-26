@@ -196,7 +196,7 @@ export default function LandingPage() {
       </motion.section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 sm:py-24 border-t border-gray-200">
+      <section id="services" className="py-28 sm:py-40 border-t border-gray-200">
         <div>
           <div className="container mx-auto px-6">
             <div className="w-full">
@@ -383,7 +383,7 @@ export default function LandingPage() {
       {/* Work Section */}
       <section 
         id="work" 
-        className="py-16 sm:py-24 border-t border-gray-200"
+        className="py-28 sm:py-40 border-t border-gray-200"
       >
         <div className="container mx-auto px-6">
           <div className="w-full">
@@ -777,7 +777,7 @@ export default function LandingPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section id="philosophy" className="py-16 sm:py-24 border-t border-gray-200">
+      <section id="philosophy" className="py-28 sm:py-40 border-t border-gray-200">
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
@@ -848,13 +848,13 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 sm:py-24 border-t border-gray-200">
-          <div className="w-full bg-gray-50 py-16 sm:py-24">
+      <section id="contact" className="py-28 sm:py-40 border-t border-gray-200">
+          <div className="w-full bg-gray-50">
             <div className="container mx-auto px-6">
               <div className="mb-16 max-w-3xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Mail className="w-8 h-8 text-black" />
-                  <h2 className="text-xl font-semibold text-black">Let's collaborate</h2>
+                  <h2 className="text-xl font-semibold text-black">Get in touch</h2>
                 </div>
                 <p className="text-xl text-gray-500">
                   Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
