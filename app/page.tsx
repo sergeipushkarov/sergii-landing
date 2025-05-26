@@ -849,7 +849,7 @@ export default function LandingPage() {
                 href="mailto:sergei@pshkrv.com"
                 className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
               >
-                <span className="text-xl text-white">Start a conversation</span>
+                <span className="text-xl text-white">Let's Talk</span>
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
               </Link>
             </div>
@@ -858,17 +858,17 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 sm:py-12 border-t border-gray-200">
+      <footer className="py-8 sm:py-12 bg-gray-900 text-white">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6">
             <div className="flex items-center gap-2">
-              <div className="font-bold text-lg text-black">pshkrv</div>
-              <div className="text-sm text-gray-500">Service & Strategic Design</div>
+              <div className="font-bold text-lg text-white">pshkrv</div>
+              <div className="text-sm text-gray-300">Service & Strategic Design</div>
             </div>
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-gray-300">
               Connecting human needs with business impact
             </div>
-            <div className="text-sm text-gray-500">&copy; 2025 All rights reserved</div>
+            <div className="text-sm text-gray-300">&copy; 2025 All rights reserved</div>
           </div>
         </div>
       </footer>
