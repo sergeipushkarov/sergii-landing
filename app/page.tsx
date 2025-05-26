@@ -32,7 +32,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white scroll-smooth">
       {/* Header */}
-      <header className="border-b border-gray-200">
+      <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <div className="flex items-center">
             <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
