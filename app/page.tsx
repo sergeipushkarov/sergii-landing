@@ -196,7 +196,7 @@ export default function LandingPage() {
       </motion.section>
 
       {/* Services Section */}
-      <section className="py-16 sm:py-24 border-t border-gray-200">
+      <section id="services" className="py-16 sm:py-24 border-t border-gray-200">
         <div>
           <div className="container mx-auto px-6">
             <div className="w-full">
