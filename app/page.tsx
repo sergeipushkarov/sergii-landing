@@ -86,7 +86,7 @@ export default function LandingPage() {
           Connecting the dots between human needs and business impact
         </h1>
         <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed" data-component-name="LandingPage">
-          Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey. The experience strategy was embedded into the architectural planning process, shaping every detail—from first impressions to final farewell—into a cohesive narrative.
+          Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
         </p>
         <div className="flex items-center gap-2 text-gray-300 mb-12">
           <MapPin className="w-4 h-4 text-gray-200" />
@@ -475,10 +475,10 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Service design for a luxury development in East Asia, focused on crafting a distinctive guest journey in an oversaturated market. The experience strategy was integrated directly into architectural planning, ensuring a cohesive narrative across every guest touchpoint.
+                    Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    From arrival to departure, the design shaped interactions, environments, and services into a seamless and memorable whole.
+                    The experience strategy was embedded into the architectural planning process, shaping every detail—from first impressions to final farewell—into a cohesive narrative.
                   </p>
                   <div className="space-y-4 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
