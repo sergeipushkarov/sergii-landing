@@ -125,7 +125,7 @@ export default function LandingPage() {
             </div>
 
             {/* Mobile horizontal scroll container */}
-            <div className="lg:hidden relative w-full pb-8 px-4">
+            <div className="lg:hidden relative w-full pb-8 -mx-6">
               {/* Fade effect on the right side */}
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10">
                 <div className="absolute right-4 bottom-4 flex items-center gap-1 text-gray-400 text-xs">
@@ -133,7 +133,7 @@ export default function LandingPage() {
                   <ArrowRight className="w-3 h-3 animate-bounce-horizontal" />
                 </div>
               </div>
-              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6">
+              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar">
                 <div className="flex gap-6 w-max pl-6">
                   {[
                     {
@@ -324,6 +324,10 @@ export default function LandingPage() {
                         { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
                         { src: "/slider1/2.png", alt: "Technical Retail Experience Project 2" },
                         { src: "/slider1/3.png", alt: "Technical Retail Experience Project 3" },
+                        { src: "/slider1/4.png", alt: "Technical Retail Experience Project 4" },
+                        { src: "/slider1/5.png", alt: "Technical Retail Experience Project 5" },
+                        { src: "/slider1/6.png", alt: "Technical Retail Experience Project 6" },
+                        { src: "/slider1/7.png", alt: "Technical Retail Experience Project 7" },
                       ]}
                       className="rounded-none"
                     />
@@ -401,12 +405,13 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black mb-6">Transforming Patient Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
-                  <div className="lg:hidden mb-8 -mx-6">
+                  <div className="lg:hidden -mx-6 mt-8">
                     <ProjectCarousel 
                       images={[
-                        { src: "/slider2/1.png", alt: "Healthcare Project 1" },
-                        { src: "/slider2/2.png", alt: "Healthcare Project 2" },
-                        { src: "/slider2/3.png", alt: "Healthcare Project 3" }
+                        { src: "/slider2/1.png", alt: "Healthcare Innovation Project 1" },
+                        { src: "/slider2/2.png", alt: "Healthcare Innovation Project 2" },
+                        { src: "/slider2/3.png", alt: "Healthcare Innovation Project 3" },
+                        { src: "/slider2/4.png", alt: "Healthcare Innovation Project 4" },
                       ]}
                       className="rounded-none"
                     />
@@ -455,12 +460,15 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black mb-6">Luxury Hospitality Customer Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
-                  <div className="lg:hidden mb-8 -mx-6">
+                  <div className="lg:hidden -mx-6 mt-8">
                     <ProjectCarousel 
                       images={[
                         { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
                         { src: "/slider3/2.png", alt: "Luxury Hotel Experience Strategy Project 2" },
-                        { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" }
+                        { src: "/slider3/3.png", alt: "Luxury Hotel Experience Strategy Project 3" },
+                        { src: "/slider3/4.png", alt: "Luxury Hotel Experience Strategy Project 4" },
+                        { src: "/slider3/5.png", alt: "Luxury Hotel Experience Strategy Project 5" },
+                        { src: "/slider3/6.png", alt: "Luxury Hotel Experience Strategy Project 6" },
                       ]}
                       className="rounded-none"
                     />
@@ -540,7 +548,7 @@ export default function LandingPage() {
             </div>
 
             {/* Mobile horizontal scroll container */}
-            <div className="md:hidden relative w-full pb-8 px-4">
+            <div className="md:hidden relative w-full pb-8 -mx-6">
               {/* Fade effect on the right side */}
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-900 to-transparent pointer-events-none z-10">
                 <div className="absolute right-4 bottom-4 flex items-center gap-1 text-white/70 text-xs">
@@ -548,7 +556,7 @@ export default function LandingPage() {
                   <ArrowRight className="w-3 h-3 animate-bounce-horizontal" />
                 </div>
               </div>
-              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6">
+              <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar">
                 <div className="flex gap-6 w-max pl-6">
                   {[
                     {
