@@ -77,7 +77,7 @@ export function ProjectCarousel({ images, className }: ProjectCarouselProps) {
         <CarouselNext className="right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
         
         {/* Dots navigation */}
-        <div className="absolute bottom-6 left-0 right-0">
+        <div className="absolute bottom-6 left-0 right-0 bg-transparent lg:bg-white/30 backdrop-blur-sm py-2 rounded-full mx-4 lg:mx-0">
           <div className="flex justify-center gap-4">
             {images.map((_, index) => (
               <button

@@ -127,7 +127,7 @@ export default function LandingPage() {
             {/* Mobile horizontal scroll container */}
             <div className="lg:hidden relative w-full pb-8 -mx-6">
               {/* Fade effect on the right side */}
-              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10">
+              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-10">
                 <div className="absolute right-4 bottom-4 flex items-center gap-1 text-gray-400 text-xs">
                   <span>Swipe</span>
                   <ArrowRight className="w-3 h-3 animate-bounce-horizontal" />
@@ -170,7 +170,7 @@ export default function LandingPage() {
                       ]
                     }
                   ].map((service, index) => (
-                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-gray-50 p-5 sm:p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-transparent p-5 sm:p-6 rounded-lg border-0 shadow-none">
                       <div className="mb-6">
                         <div className="mb-2">
                           {service.icon}
@@ -306,9 +306,9 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="space-y-24 sm:space-y-40 w-full">
+            <div className="space-y-0 w-full">
               {/* Project 1 */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pb-24 sm:pb-40 border-b border-gray-100">
                 {/* Text content - comes first on mobile, stays on left on desktop */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
@@ -318,7 +318,7 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black mb-6">Reimagining Technical Retail Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
-                  <div className="lg:hidden mb-8 -mx-6">
+                  <div className="lg:hidden mb-12 -mx-6">
                     <ProjectCarousel 
                       images={[
                         { src: "/slider1/1.png", alt: "Technical Retail Experience Project 1" },
@@ -347,8 +347,8 @@ export default function LandingPage() {
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Brand strategy</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">service design</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">digital tools</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Service Design</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Digital Tools</span>
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -382,7 +382,7 @@ export default function LandingPage() {
               </div>
 
               {/* Project 2 */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pt-24 sm:pt-40 pb-24 sm:pb-40 border-b border-gray-100">
                 {/* Desktop image - only shows on desktop */}
                 <div className="hidden lg:block">
                   <ProjectCarousel 
@@ -405,7 +405,7 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black mb-6">Transforming Patient Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
-                  <div className="lg:hidden -mx-6 mt-8">
+                  <div className="lg:hidden -mx-6 mt-8 mb-12">
                     <ProjectCarousel 
                       images={[
                         { src: "/slider2/1.png", alt: "Healthcare Innovation Project 1" },
@@ -431,8 +431,8 @@ export default function LandingPage() {
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Service design</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">digital platform</span>
-                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">training</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Digital platform</span>
+                        <span className="bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">Training</span>
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -450,7 +450,7 @@ export default function LandingPage() {
               </div>
 
               {/* Project 3 */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pt-24 sm:pt-40">
                 {/* Text content - comes first on mobile, stays on left on desktop */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
@@ -460,7 +460,7 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black mb-6">Luxury Hospitality Customer Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
-                  <div className="lg:hidden -mx-6 mt-8">
+                  <div className="lg:hidden -mx-6 mt-8 mb-12">
                     <ProjectCarousel 
                       images={[
                         { src: "/slider3/1.png", alt: "Luxury Hotel Experience Strategy Project 1" },
@@ -488,7 +488,7 @@ export default function LandingPage() {
                       </div>
                       <div className="flex flex-wrap gap-1.5">
                         <span className="bg-gray-800 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full whitespace-nowrap">Experience strategy</span>
-                        <span className="bg-gray-800 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full whitespace-nowrap">spatial planning</span>
+                        <span className="bg-gray-800 text-white text-[10px] sm:text-xs px-2 py-1 rounded-full whitespace-nowrap">Spatial planning</span>
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -598,9 +598,9 @@ export default function LandingPage() {
                         {item.description}
                       </p>
                       <div className="pt-4 border-t border-gray-700">
-                        <div className="flex flex-col items-start gap-2 mt-2">
+                        <div className="flex flex-wrap gap-2 mt-2">
                           {item.tags.map((tag, i) => (
-                            <span key={i} className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full border border-gray-200">
+                            <span key={i} className="bg-white/10 text-white/80 text-xs px-3 py-1.5 rounded-full border border-white/10">
                               {tag}
                             </span>
                           ))}
