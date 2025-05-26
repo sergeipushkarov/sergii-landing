@@ -86,7 +86,7 @@ export default function LandingPage() {
           Connecting the dots between human needs and business impact
         </h1>
         <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed" data-component-name="LandingPage">
-          Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
+          Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey. The experience strategy was embedded into the architectural planning process, shaping every detail—from first impressions to final farewell—into a cohesive narrative.
         </p>
         <div className="flex items-center gap-2 text-gray-300 mb-12">
           <MapPin className="w-4 h-4 text-gray-200" />
