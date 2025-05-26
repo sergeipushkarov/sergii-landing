@@ -76,7 +76,7 @@ export default function LandingPage() {
             </nav>
             <div>
               <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black whitespace-nowrap" asChild>
-                <Link href="#contact">Start a Project</Link>
+                <Link href="#contact">Get in touch</Link>
               </Button>
             </div>
           </div>
@@ -611,15 +611,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="mt-20 text-left">
-              <Link
-                href="#contact"
-                className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
-              >
-                <span className="text-xl text-white">Discuss your project</span>
-                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
-              </Link>
-            </div>
+
           </div>
         </div>
       </section>
@@ -689,9 +681,9 @@ export default function LandingPage() {
                         {item.description}
                       </p>
                       <div className="pt-4 border-t border-gray-700">
-                        <div className="flex flex-wrap gap-2 mt-2">
+                        <div className="flex flex-col gap-3 mt-2">
                           {item.tags.map((tag, i) => (
-                            <span key={i} className="bg-white/10 text-white/80 text-xs px-3 py-1.5 rounded-full border border-white/10">
+                            <span key={i} className="bg-white/10 text-white/80 text-xs px-2.5 py-1 rounded-full border border-white/10 w-fit">
                               {tag}
                             </span>
                           ))}
@@ -716,10 +708,10 @@ export default function LandingPage() {
                   others miss.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Stakeholder interviews</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Contextual inquiry</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Competitive analysis</span>
+                  <div className="flex flex-col gap-3 mt-2">
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Stakeholder interviews</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Contextual inquiry</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Competitive analysis</span>
                   </div>
                 </div>
               </div>
@@ -735,10 +727,10 @@ export default function LandingPage() {
                   clear problem statements.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Insight development</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Opportunity mapping</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Strategic frameworks</span>
+                  <div className="flex flex-col gap-3 mt-2">
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Insight development</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Opportunity mapping</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Strategic frameworks</span>
                   </div>
                 </div>
               </div>
@@ -754,10 +746,10 @@ export default function LandingPage() {
                   refine concepts.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Co-creation workshops</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Service blueprinting</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Prototyping</span>
+                  <div className="flex flex-col gap-3 mt-2">
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Co-creation workshops</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Service blueprinting</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Prototyping</span>
                   </div>
                 </div>
               </div>
@@ -773,10 +765,10 @@ export default function LandingPage() {
                   frameworks.
                 </p>
                 <div className="pt-4 border-t border-gray-700">
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Implementation planning</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Success metrics</span>
-                    <span className="bg-white/90 text-gray-800/90 text-xs px-2 py-1 rounded-full border border-gray-200/80">Continuous improvement</span>
+                  <div className="flex flex-col gap-3 mt-2">
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Implementation planning</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Success metrics</span>
+                    <span className="bg-white/90 text-gray-800/90 text-xs px-2.5 py-1 rounded-full border border-gray-200/80 w-fit">Continuous improvement</span>
                   </div>
                 </div>
               </div>
