@@ -31,9 +31,9 @@ import { ProjectCarousel } from "@/components/ProjectCarousel"
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white scroll-smooth">
+    <div className="min-h-screen bg-gray-50 scroll-smooth">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+      <header className="sticky top-0 z-50 bg-gray-50 border-b border-gray-200">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <div className="flex items-center">
             <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
@@ -170,7 +170,7 @@ export default function LandingPage() {
                       ]
                     }
                   ].map((service, index) => (
-                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-white p-5 sm:p-6 rounded-lg shadow-sm border border-gray-100">
+                    <div key={index} className="w-[85vw] flex-shrink-0 snap-start bg-gray-50 p-5 sm:p-6 rounded-lg shadow-sm border border-gray-100">
                       <div className="mb-6">
                         <div className="mb-2">
                           {service.icon}
