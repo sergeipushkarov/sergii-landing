@@ -1,5 +1,7 @@
 "use client"
 
+import * as React from 'react';
+import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button"
 import {
   ArrowRight,
@@ -27,7 +29,24 @@ import {
 import Link from "next/link"
 import Image from "next/image"
 import Starfield from "@/components/Starfield"
+
+// Define the motion components with proper types
+const MotionSection = motion.section;
+const MotionDiv = motion.div;
 import { ProjectCarousel } from "@/components/ProjectCarousel"
+
+// Animation variants for block-level animations
+const containerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut"
+    }
+  }
+};
 
 export default function LandingPage() {
   return (
@@ -36,7 +55,12 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 bg-gray-50 border-b border-gray-200">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
+            <Link href="#" onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}>
+              <img src="/logo1.svg" alt="pshkrv logo" className="w-15 h-10" />
+            </Link>
           </div>
           <div className="flex items-center space-x-8">
             <nav className="hidden md:flex space-x-8">
@@ -50,79 +74,142 @@ export default function LandingPage() {
                 Approach
               </Link>
             </nav>
-            <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black whitespace-nowrap" asChild>
-              <Link href="#contact">Start a Project</Link>
-            </Button>
+            <div>
+              <Button variant="outline" className="rounded-full border-2 border-black bg-black text-white hover:bg-white hover:text-black whitespace-nowrap" asChild>
+                <Link href="#contact">Start a Project</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-<section
-  className="py-16 sm:py-24 lg:py-32 relative overflow-hidden min-h-screen flex items-center"
-  style={{
-    backgroundImage: 'linear-gradient(120deg, #151a2b 60%, #232946 100%)',
-    position: 'relative',
-    isolation: 'isolate',
-  }}
->
-  <Starfield />
-  {/* Grid Background */}
-  <div 
-    className="absolute inset-0 opacity-10 pointer-events-none"
-    style={{
-      backgroundImage: 'linear-gradient(to right, #c7d2e5 1px, transparent 1px), linear-gradient(to bottom, #c7d2e5 1px, transparent 1px)',
-      backgroundSize: '60px 60px',
-    }}
-  />
-  <div className="container mx-auto px-6 relative z-10">
-    <div className="grid lg:grid-cols-3 gap-12 items-center">
-      <div className="lg:col-span-2 max-w-5xl">
-        <div className="flex items-center gap-2 text-sm text-gray-200 mb-8">
-          <Compass className="w-4 h-4 text-gray-100" />
-          <span>Service & Strategic Design Consultancy</span>
-        </div>
-        <h1 className="text-5xl lg:text-6xl font-light mb-12 text-white leading-tight tracking-tight">
-          Connecting the dots between human needs and business impact
-        </h1>
-        <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed" data-component-name="LandingPage">
-          Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
-        </p>
-        <div className="flex items-center gap-2 text-gray-300 mb-12">
-          <MapPin className="w-4 h-4 text-gray-200" />
-          <span className="text-sm">Based in Milan, working globally</span>
-        </div>
-        <Link
-          href="#services"
-          className="inline-flex items-center px-10 py-5 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group text-lg leading-tight"
-        >
-          <span className="text-xl text-white">Explore</span>
-          <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
-        </Link>
-      </div>
-
+      <motion.section
+        className="py-16 sm:py-24 lg:py-32 relative overflow-hidden min-h-screen flex items-center"
+        style={{
+          backgroundImage: 'linear-gradient(120deg, #151a2b 60%, #232946 100%)',
+          position: 'relative',
+          isolation: 'isolate',
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Starfield />
+        {/* Grid Background */}
+        <div 
+          className="absolute inset-0 opacity-10 pointer-events-none"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #c7d2e5 1px, transparent 1px), linear-gradient(to bottom, #c7d2e5 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+          }}
+        />
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <motion.div 
+            className="grid lg:grid-cols-3 gap-12 items-center"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <div className="lg:col-span-2 max-w-5xl">
+              <motion.div 
+                className="flex items-center gap-2 text-sm text-gray-200 mb-8"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, delay: 0.1 }
+                  }
+                }}
+              >
+                <Compass className="w-4 h-4 text-gray-100" />
+                <span>Service & Strategic Design Consultancy</span>
+              </motion.div>
+              
+              <motion.h1 
+                className="text-5xl lg:text-6xl font-light mb-12 text-white leading-tight tracking-tight"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, delay: 0.2 }
+                  }
+                }}
+              >
+                Connecting the dots between human needs and business impact
+              </motion.h1>
+              
+              <motion.p 
+                className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed"
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, delay: 0.3 }
+                  }
+                }}
+              >
+                Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
+              </motion.p>
+              
+              <motion.div 
+                className="flex items-center gap-2 text-gray-300 mb-12"
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, delay: 0.4 }
+                  }
+                }}
+              >
+                <MapPin className="w-4 h-4 text-gray-200" />
+                <span className="text-sm">Based in Milan, working globally</span>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+              >
+                <Link
+                  href="#services"
+                  className="inline-flex items-center px-10 py-5 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group text-lg leading-tight"
+                >
+                  <span className="text-xl text-white">Explore</span>
+                  <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
+                </Link>
+              </motion.div>
+            </div>
+            
             {/* Right side - thinner column */}
             <div className="relative h-[600px] hidden lg:block">
               {/* Empty container for future content */}
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 sm:py-24 border-t border-gray-200">
-        <div className="container mx-auto px-6">
-          <div className="w-full">
-            <div className="mb-20 max-w-3xl">
-              <div className="flex items-center gap-3 mb-6">
-                <Zap className="w-8 h-8 text-black" />
-                <h2 className="text-xl font-semibold text-black">Services</h2>
+      <section className="py-16 sm:py-24 border-t border-gray-200">
+        <div>
+          <div className="container mx-auto px-6">
+            <div className="w-full">
+              <div className="mb-20 max-w-3xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <Zap className="w-8 h-8 text-black" />
+                  <h2 className="text-xl font-semibold text-black">Services</h2>
+                </div>
+                <p className="text-xl text-gray-600">
+                  Multidisciplinary approach bridging strategic thinking with design execution—creating solutions that
+                  address immediate needs and long-term goals.
+                </p>
               </div>
-              <p className="text-xl text-gray-600">
-                Multidisciplinary approach bridging strategic thinking with design execution—creating solutions that
-                address immediate needs and long-term goals.
-              </p>
-            </div>
 
             {/* Mobile horizontal scroll container */}
             <div className="lg:hidden relative w-full pb-8 -mx-6">
@@ -290,10 +377,14 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       {/* Work Section */}
-      <section id="work" className="py-16 sm:py-24 border-t border-gray-200">
+      <section 
+        id="work" 
+        className="py-16 sm:py-24 border-t border-gray-200"
+      >
         <div className="container mx-auto px-6">
           <div className="w-full">
             <div className="mb-20 max-w-3xl">
