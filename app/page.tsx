@@ -85,9 +85,8 @@ export default function LandingPage() {
         <h1 className="text-5xl lg:text-6xl font-light mb-12 text-white leading-tight tracking-tight">
           Connecting the dots between human needs and business impact
         </h1>
-        <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
-          15+ years helping organizations transform complex challenges into meaningful experiences that drive
-          measurable results.
+        <p className="text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed" data-component-name="LandingPage">
+          Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
         </p>
         <div className="flex items-center gap-2 text-gray-300 mb-12">
           <MapPin className="w-4 h-4 text-gray-200" />
@@ -97,7 +96,7 @@ export default function LandingPage() {
           href="#services"
           className="inline-flex items-center px-10 py-5 border-2 border-white/90 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 group text-lg leading-tight"
         >
-          <span className="text-xl text-white">How we can collaborate</span>
+          <span className="text-xl text-white">Explore</span>
           <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform text-white" />
         </Link>
       </div>
@@ -331,11 +330,10 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Comprehensive transformation for a major technical retailer futureproofing its benchmark position. Deep customer research resulted in a complete brand overhaul and experience redesign.
+                    A comprehensive transformation for a major tech retailer, redefining its role in a rapidly evolving market. Grounded in in-depth customer research, the project reshaped the brand from the inside out—across identity, space, and service.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    Solution included new brand identity, redesigned environments, custom digital tools, and integrated
-                    online-offline journey.
+                    The result: a new visual identity, redesigned retail environments, purpose-built digital tools, and a connected online-offline experience that feels seamless to customers.
                   </p>
                   <div className="space-y-3 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -415,12 +413,10 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Aesthetic medical clinic sought differentiation while improving efficiency. In-depth shadowing
-                    identified critical pain points and enhancement opportunities.
+                    An aesthetic medical clinic needed to stand out in a crowded market while improving operational flow. On-site shadowing revealed key friction points across the patient journey, uncovering opportunities for both differentiation and efficiency.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    Service redesign included digital booking, patient communications, staff protocols, and custom
-                    platform integration.
+                    The service redesign spanned digital booking, patient communications, staff protocols, and a custom platform integration—delivering a smoother, more cohesive experience for both patients and staff.
                   </p>
                   <div className="space-y-3 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -471,12 +467,10 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Led service design for luxury hospitality development in East Asia. Challenge: create distinctive guest
-                    experience in crowded luxury market.
+                    Service design for a luxury development in East Asia, focused on crafting a distinctive guest journey in an oversaturated market. The experience strategy was integrated directly into architectural planning, ensuring a cohesive narrative across every guest touchpoint.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    Integrated service design into architectural planning, creating cohesive experience strategy
-                    informing all guest touchpoints.
+                    From arrival to departure, the design shaped interactions, environments, and services into a seamless and memorable whole.
                   </p>
                   <div className="space-y-4 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
