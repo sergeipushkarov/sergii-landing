@@ -25,6 +25,7 @@ import {
   ArrowUp,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import Starfield from "@/components/Starfield"
 import { ProjectCarousel } from "@/components/ProjectCarousel"
 
@@ -764,19 +765,31 @@ export default function LandingPage() {
 
       {/* Contact Section */}
       <section id="contact" className="py-16 sm:py-24 border-t border-gray-200">
-        <div className="container mx-auto px-6">
-          <div className="w-full">
-            <div className="mb-16 max-w-3xl">
-              <div className="flex items-center gap-3 mb-6">
-                <Mail className="w-8 h-8 text-black" />
-                <h2 className="text-xl font-semibold text-black">Let's collaborate</h2>
+          <div className="w-full bg-gray-50 py-16 sm:py-24">
+            <div className="container mx-auto px-6">
+              <div className="mb-16 max-w-3xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <Mail className="w-8 h-8 text-black" />
+                  <h2 className="text-xl font-semibold text-black">Let's collaborate</h2>
+                </div>
+                <p className="text-xl text-gray-600">
+                  Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
+                </p>
               </div>
-              <p className="text-xl text-gray-600">
-                Working with forward-thinking organizations ready to embrace strategic design as innovation driver.
-              </p>
-            </div>
 
-            <div className="grid md:grid-cols-2 gap-8 sm:gap-12 w-full max-w-5xl">
+            <div className="grid md:grid-cols-3 gap-8 sm:gap-12 w-full">
+              <div className="flex justify-start items-start">
+                <div className="relative w-full max-w-[200px] h-[256px] rounded-lg overflow-hidden shadow-lg">
+                  <Image 
+                    src="/portrait.png" 
+                    alt="Sergei Pushkarov" 
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              </div>
+
               <div>
                 <h3 className="text-xl font-light mb-8 text-black">Get in touch</h3>
                 <div className="space-y-6">
