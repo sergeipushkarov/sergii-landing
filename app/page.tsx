@@ -566,7 +566,7 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey.
+                    Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey. In collaboration with Studio Marco Piva.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
                     The experience strategy was embedded into the architectural planning process, shaping every detail—from first impressions to final farewell—into a cohesive narrative.
