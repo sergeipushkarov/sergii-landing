@@ -154,7 +154,7 @@ export default function LandingPage() {
                   }
                 }}
               >
-                Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality—turning complex challenges into measurable results.
+                Over 15 years designing impactful solutions across healthcare, retail, and luxury hospitality, turning complex challenges into measurable results.
               </motion.p>
               
               <motion.div 
@@ -206,7 +206,7 @@ export default function LandingPage() {
                   <h2 className="text-xl font-semibold text-black">Services</h2>
                 </div>
                 <p className="text-xl text-gray-500">
-                  Multidisciplinary approach bridging strategic thinking with design execution—creating solutions that
+                  Multidisciplinary approach bridging strategic thinking with design execution, creating solutions that
                   address immediate needs and long-term goals.
                 </p>
               </div>
@@ -399,14 +399,14 @@ export default function LandingPage() {
 
             <div className="space-y-0 w-full">
               {/* Project 1 */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pb-24 sm:pb-40 border-b border-gray-100">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pb-24 sm:pb-40 border-b border-gray-200">
                 {/* Text content - comes first on mobile, stays on left on desktop */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
                     <Globe className="w-4 h-4" />
                     <span>Retail Transformation</span>
                   </div>
-                  <h3 className="text-3xl font-light text-black mb-6">Reimagining Technical Retail Experience</h3>
+                  <h3 className="text-3xl font-light text-black mb-6">Reimagining Retail Experience</h3>
                   
                   {/* Mobile image - only shows on mobile */}
                   <div className="lg:hidden mb-12 -mx-6">
@@ -425,7 +425,7 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-gray-600 mb-6 leading-relaxed">
-                    A comprehensive transformation for a major tech retailer, redefining its role in a rapidly evolving market. Grounded in in-depth customer research, the project reshaped the brand from the inside out—across identity, space, and service.
+                    A comprehensive transformation for a major tech retailer, redefining its role in a rapidly evolving market. Grounded in in-depth customer research, the project reshaped the brand from the inside out, across identity, space, and service.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
                     The result: a new visual identity, redesigned retail environments, purpose-built digital tools, and a connected online-offline experience that feels seamless to customers.
@@ -453,6 +453,18 @@ export default function LandingPage() {
                       </div>
                     </div>
                   </div>
+                  
+                  <div className="mt-8">
+                    <a 
+                      href="https://drive.google.com/file/d/1pCg8JYNmcEbt4kOw4jJVnDQczefWsV8p/view?usp=sharing"
+                      className="inline-flex items-center justify-center gap-5 text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 rounded-full border-2 border-black bg-white text-black hover:bg-black hover:text-white whitespace-nowrap"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Explore the Case (PDF)</span>
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  </div>
                 </div>
                 
                 {/* Desktop image - only shows on desktop */}
@@ -473,7 +485,7 @@ export default function LandingPage() {
               </div>
 
               {/* Project 2 */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pt-24 sm:pt-40 pb-24 sm:pb-40 border-b border-gray-100">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start w-full pt-24 sm:pt-40 pb-24 sm:pb-40 border-b border-gray-200">
                 {/* Desktop image - only shows on desktop */}
                 <div className="hidden lg:block">
                   <ProjectCarousel 
@@ -512,7 +524,7 @@ export default function LandingPage() {
                     An aesthetic medical clinic needed to stand out in a crowded market while improving operational flow. On-site shadowing revealed key friction points across the patient journey, uncovering opportunities for both differentiation and efficiency.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    The service redesign spanned digital booking, patient communications, staff protocols, and a custom platform integration—delivering a smoother, more cohesive experience for both patients and staff.
+                    The service redesign spanned digital booking, patient communications, staff protocols, and a custom platform integration, delivering a smoother, more cohesive experience for both patients and staff.
                   </p>
                   <div className="space-y-3 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -569,7 +581,7 @@ export default function LandingPage() {
                     Service design for a luxury hospitality development in East Asia, centered on creating a distinctive and seamless guest journey. In collaboration with Studio Marco Piva.
                   </p>
                   <p className="text-gray-600 mb-8 leading-relaxed">
-                    The experience strategy was embedded into the architectural planning process, shaping every detail—from first impressions to final farewell—into a cohesive narrative.
+                    The experience strategy was embedded into the architectural planning process, shaping every detail, from first impressions to final farewell, into a cohesive narrative.
                   </p>
                   <div className="space-y-4 text-sm">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-600">
@@ -812,8 +824,7 @@ export default function LandingPage() {
                   <h3 className="text-3xl font-light text-black">Human needs balanced with business realities</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Successful design serves both human needs and business objectives—creating experiences that delight
-                  users while delivering measurable impact.
+                  Successful design serves both human needs and business objectives, creating experiences that delight users while delivering measurable impact.
                 </p>
               </div>
 
@@ -896,10 +907,10 @@ export default function LandingPage() {
                       <Link
                         href="https://www.linkedin.com/in/pshkrv"
                         target="_blank"
-                        className="text-black hover:text-gray-600 transition-colors flex items-center gap-1"
+                        className="text-black hover:text-gray-600 transition-colors flex items-center gap-2"
                       >
                         linkedin.com/in/pshkrv
-                        <ExternalLink className="w-3 h-3" />
+                        <ExternalLink className="w-4 h-4" />
                       </Link>
                     </div>
                   </div>
@@ -943,7 +954,7 @@ export default function LandingPage() {
 
             <div className="mt-16 pt-16 border-t border-gray-200">
               <Link
-                href="mailto:sergei@pshkrv.com"
+                href="mailto:sergei.pushkaryov@gmail.com"
                 className="inline-flex items-center px-10 py-5 border-2 border-black/90 rounded-full bg-black hover:bg-gray-800 transition-all duration-300 group text-lg leading-tight"
               >
                 <span className="text-xl text-white">Let's Talk</span>
